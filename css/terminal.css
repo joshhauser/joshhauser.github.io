@@ -1,20 +1,55 @@
+html{
+  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
+  scrollbar-width: thin;
+}
+
+/* TERMINAL */
 #terminal{
+  margin-top: 5%
+}
+
+#terminalBody{
     background-color: rgb(22, 21, 21);
     width: 800px;
-    height: 600px;
+    height: 300px;
     border-radius: 0 0 8px 8px;
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 #terminalHeader{
-    background: lightgray;
+    background: rgb(48, 48, 48);
     text-align: center;
     width: 800px;
-    color: rgb(48, 48, 48);
+    color: white;
     height: 30px;
     border-radius: 8px 8px 0 0;
 }
 
-#terminal, #terminalHeader{
+#terminalBody, #terminalHeader{
     font-family: Consolas;
-    margin: auto;
+    margin: 0 auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px){
+  #terminalBody, #terminalHeader{
+    margin: 0 auto;
+  }
+
+  #terminal{
+    margin-top: 10%;
+  }
+  
+}
+
+@media(max-width: 850px){
+  #terminal, #terminalBody, #terminalHeader{
+    display: none;
+  }
 }
