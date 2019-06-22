@@ -213,7 +213,7 @@ footer{
 
 @media (max-width: 700px){
 	html{
-		background-image: url('/imgs/mobile_background.png');
+		background-image: url('../imgs/mobile_background.png');
 		background-size: contain;
 	}
 
