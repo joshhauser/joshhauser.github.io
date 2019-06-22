@@ -9,4 +9,18 @@ $(window).ready(function(){
             typeSpeed: 40
         }); 
     }, 1000);
+
+    var skillsTyped = new Typed("#skillsTyped", {
+      strings: [
+        "^500 Python",
+        "^500 Java",
+        "^500 JavaScript",
+        "^500 HTML/CSS",
+        "^500 PHP"
+      ],
+      typeSpeed: 60,
+      backSpeed: 60,
+      shuffle: true,
+      loop: true
+    })
 });
