@@ -28,7 +28,7 @@
 	margin-top: 21.5px;
 }
 
-/* .loader{
+.loader{
 	position : fixed;
 	z-index: 1;
 	background : url('/img/icon-loader2.gif');
@@ -40,7 +40,7 @@
 	height : 100%;
 	width : 100%;
 	cursor : wait;
-} */
+}
 
 .custom-link{
 	text-decoration: none;
