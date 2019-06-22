@@ -1,0 +1,300 @@
+/*//////////////////////////////////////*/
+/* 				CLASSIQUE				*/
+/*//////////////////////////////////////*/
+
+#titre, #home{
+	color: white;
+	text-align: left;
+	font-family: "lucida console";
+	text-decoration: none;
+}
+
+#titre{
+	font-size: 17px;
+	float: left;
+	margin-left: 30px;
+	margin-top:21.5px;
+}
+
+#copyright{
+	text-align: right;
+	margin-right: 30px;
+	float: right;
+	margin-top: 21.5px;
+}
+
+.loader{
+	position : fixed;
+	z-index: 1;
+	background: url('/img/icon-loader2.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	top : 0px;
+	left : 0px;
+	height : 100%;
+	width : 100%;
+	cursor : wait;
+}
+
+.custom-link{
+	text-decoration: none;
+	font-family: "lucida console";
+	color: white;
+}
+
+.custom-link:hover{
+	color: #FE3838;
+	transition-duration: 0.5s;
+}
+
+html{
+	background-color: rgb(51,51,51);
+	background-image: url('./../img/background-2.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer{
+	background-color: #191919;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 5%;
+	height: 65px;
+}
+
+.header-content{
+	background-color: #191919;
+	left: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	height: 60px;
+}
+
+#menu{
+	float: right;
+	margin-right: 30px;
+	color: white;
+	font-family:  "lucida console";
+	text-align: right;
+}
+
+
+#menu-links{
+	list-style: none;
+	margin-top: 23px;
+}
+
+#menu-links li{
+	display: inline-block;
+	font-size: 14px;
+}
+
+.sep{
+	color: rgba(255,255,255,0.3);
+}
+
+#social-links{
+	padding:0;
+	text-align: left;
+	margin-left: 15px;
+	float: left;
+	list-style: none;
+	list-style-position: outside;
+}
+
+#social-links li{
+	display: inline-block;
+	padding-left: 5px;
+	margin-top: 3px;
+}
+
+.social-icons{
+	width: 27px;
+}
+
+.social-icons:hover{
+	filter: invert(1);
+	transition-duration: 0.5s;
+}
+
+.content{
+	position: relative;
+}
+
+.section-inner{
+	width: 1040px;
+	max-width: 90%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.projects{
+	margin-top: 0.95%;
+}
+
+.project{
+	border-radius: 25px;
+}
+
+.project:hover{
+	filter:grayscale(1);
+	transition-duration:0.5s;
+}
+
+.projects .project + .project{
+	margin-left: 3.95%;
+}
+
+.projects .project{
+	display: block;
+	width: 30%;
+	margin-top: 3.95%;
+	padding-bottom: 30.7%;
+	float: left;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.projects .project:nth-child(3n+1){
+
+    margin-left: 0;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/*//////////////////////////////////////*/
+/* 				RESPONSIVE				*/
+/*//////////////////////////////////////*/
+
+@media (max-width: 900px){
+	.projects .project{
+		width: 48.025%;
+		padding-bottom: 48.025%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.projects .project:nth-child(3n+1){
+		margin-left: 3.95%;
+	}
+
+	.projects .project:nth-child(2n+1){
+		margin-left: 0;
+	}
+
+}
+
+@media (max-width: 700px){
+	html{
+		background-image: url('/img/mobile_background.png');
+		background-size: contain;
+	}
+
+	#titre{
+		text-align: center;
+		float: unset;
+		margin-top: 22.7px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.header-content{
+		height: 100px;
+		margin: 0;
+	}
+
+	#menu{
+		float: unset;
+		color: white;
+		font-family:  "lucida console";
+		text-align: center;
+	}
+
+	.custom-link:focus{
+		color: #FE3838;
+		transition-duration: 0.5s;
+	}
+
+	#menu-links{
+		margin-top: 22.7px;
+	}
+
+	#menu-links li{
+		font-size: 14px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 600px){
+	.section-inner{
+		margin-top: 130px;
+	}
+	.projects{
+		margin-top: 0;
+	}
+
+	.projects .project{
+		width: 100%;
+		padding-bottom: 50%;
+		min-height: 200px;
+		margin-left: 0 !important;
+		margin-top: 5%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.projects .project:first-child{
+		margin-top: 0%;
+	}
+
+}
+
+@media (max-width: 400px){
+	.projects .project{
+		min-height: 220px;
+		padding-bottom: 15px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 0;
+	}
+
+	#social-links{
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		float: unset;
+		margin-bottom: 10px;
+	}
+
+	#copyright{
+		text-align: center;
+		float: none;
+		margin-left:auto;
+		margin-right: auto;
+		margin-top: 0;
+	}
+
+	html{
+		background-size: cover;
+		background-position: fixed;
+		background-repeat: no-repeat;
+	}
+
+	footer{
+		height: 105px;
+	}
+}
