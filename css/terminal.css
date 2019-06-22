@@ -1,0 +1,20 @@
+#terminal{
+    background-color: rgb(22, 21, 21);
+    width: 800px;
+    height: 600px;
+    border-radius: 0 0 8px 8px;
+}
+
+#terminalHeader{
+    background: lightgray;
+    text-align: center;
+    width: 800px;
+    color: rgb(48, 48, 48);
+    height: 30px;
+    border-radius: 8px 8px 0 0;
+}
+
+#terminal, #terminalHeader{
+    font-family: Consolas;
+    margin: auto;
+}
