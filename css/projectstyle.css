@@ -31,10 +31,10 @@
 .loader{
 	position : fixed;
 	z-index: 1;
-/* 	background : url('/img/icon-loader2.gif');
+	background : url('/img/icon-loader2.gif');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-color: white; */
+	background-color: white;
 	top : 0px;
 	left : 0px;
 	height : 100%;
