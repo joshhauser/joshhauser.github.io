@@ -22,6 +22,11 @@ html::-webkit-scrollbar {
     scrollbar-width: thin;
 }
 
+#terminalBody a{
+  text-decoration: underline;
+  color: white;
+}
+
 #terminalHeader{
     background: rgb(48, 48, 48);
     text-align: center;
