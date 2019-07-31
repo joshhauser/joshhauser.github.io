@@ -157,7 +157,7 @@ footer{
 	margin-top: 3.95%;
 	padding-bottom: 30.7%;
 	float: left;
-	position: absolute;
+	position: relative;
 	background-size: cover;
 	background-position: center;
 }
