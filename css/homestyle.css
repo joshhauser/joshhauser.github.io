@@ -162,7 +162,7 @@ footer{
 	background-position: center;
 }
 
-.projects .project .project:nth-child(3n+1){
+.projects .project:nth-child(3n+1){
     margin-left: 0;
 }
 
