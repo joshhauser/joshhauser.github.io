@@ -1,4 +1,4 @@
-html{
+/* html{
   scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
   scrollbar-width: thin;
 }
@@ -8,7 +8,6 @@ html::-webkit-scrollbar {
   scrollbar-width: thin;
 }
 
-/* TERMINAL */
 #terminal{
   margin-top: 5%
 }
@@ -41,7 +40,7 @@ html::-webkit-scrollbar {
     margin: 0 auto;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 1000px){
   #terminalBody, #terminalHeader{
     margin: 0 auto;
@@ -56,4 +55,4 @@ html::-webkit-scrollbar {
   #terminal, #terminalBody, #terminalHeader{
     display: none;
   }
-}
+} */
