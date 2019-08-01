@@ -200,9 +200,13 @@ figcaption{
 	text-align: center;
 	color: #1d1d1d;
 	padding-bottom: 10px;
-	margin-top: 3%;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
+figure a img {
+  border: 1px solid gray;
+}
 #project-content{
 	text-align:center;
 	padding-bottom: 20px;
