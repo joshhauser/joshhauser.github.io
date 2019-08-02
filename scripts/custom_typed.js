@@ -16,7 +16,8 @@ $(window).ready(function(){
         "^500 Java",
         "^500 JavaScript",
         "^500 HTML/CSS",
-        "^500 PHP"
+        "^500 PHP",
+        "^500 C"
       ],
       typeSpeed: 60,
       backSpeed: 60,
