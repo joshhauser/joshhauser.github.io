@@ -2,10 +2,15 @@
 /* 				CLASSIQUE				*/
 /*//////////////////////////////////////*/
 
+@font-face{
+  font-family: "Consolas Linux";
+  src: url("../fonts/Consolas.ttf");
+}
+
 #titre, #home{
 	color: white;
 	text-align: left;
-	font-family: "lucida console";
+	font-family: "lucida console", "Consolas Linux";
 	text-decoration: none;
 }
 
@@ -78,7 +83,7 @@ footer{
 	float: right;
 	margin-right: 30px;
 	color: white;
-	font-family: "lucida console";
+	font-family: "lucida console", "Consolas Linux";
 	text-align: right;
 }
 

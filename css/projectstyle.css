@@ -2,6 +2,11 @@
 /* 				CLASSIQUE				*/
 /*//////////////////////////////////////*/
 
+@font-face{
+  font-family: "Consolas Linux";
+  src: url("../fonts/Consolas.ttf");
+}
+
 #titre, #home{
 	color: white;
 	text-align: center;
