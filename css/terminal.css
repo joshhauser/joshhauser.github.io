@@ -42,7 +42,7 @@ html::-webkit-scrollbar {
 }
 
 #terminalBody, #terminalHeader{
-    font-family: Consolas, "Consolas Linux";
+    font-family: "Consolas", "Consolas Linux";
     margin: 0 auto;
 }
 
