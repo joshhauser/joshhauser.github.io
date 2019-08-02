@@ -10,7 +10,7 @@
 #titre, #home{
 	color: white;
 	text-align: center;
-	font-family: "lucida console";
+	font-family: "lucida console", "Consolas Linux";
 	text-decoration: none;
 }
 
@@ -46,7 +46,7 @@
 
 .custom-link{
 	text-decoration: none;
-	font-family: "lucida console";
+	font-family: "lucida console", "Consolas Linux";
 	color: white;
 }
 
