@@ -10,7 +10,7 @@ $(window).ready(function(){
         }); 
     }, 1000);
 
-    var skillsTyped = new Typed("#skillsTyped", {
+    var skills = new Typed("#skills", {
       strings: [
         "^500 Python",
         "^500 Java",
