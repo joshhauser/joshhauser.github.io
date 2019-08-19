@@ -1,3 +1,15 @@
+/* STYLESHEET FOR GLOBAL SITE */
+
+html{
+  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
+  scrollbar-width: thin;
+}
+
 #skills{
   color: #02a9fc;
 }

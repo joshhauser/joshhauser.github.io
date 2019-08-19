@@ -1,6 +1,4 @@
-/*//////////////////////////////////////*/
-/* 				CLASSIQUE				*/
-/*//////////////////////////////////////*/
+/* STYLESHEET FOR PROJECT PAGES */
 
 @font-face{
   font-family: "Consolas Linux";
@@ -263,7 +261,7 @@ figure a img {
 
 
 /*//////////////////////////////////////*/
-/* 				RESPONSIVE				*/
+/* 	       	  	 	RESPONSIVE	      		*/
 /*//////////////////////////////////////*/
 
 @media (max-width: 700px){

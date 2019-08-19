@@ -1,19 +1,9 @@
+/* STYLESHEET FOR TERMINAL */
 @font-face{
   font-family: "Consolas Linux";
   src: url("../fonts/Consolas.ttf");
 }
 
-html{
-  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
-  scrollbar-width: thin;
-}
-
-html::-webkit-scrollbar {
-  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
-  scrollbar-width: thin;
-}
-
-/* TERMINAL */
 #terminal{
   margin-top: 5%
 }
