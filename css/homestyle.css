@@ -5,20 +5,6 @@
   src: url("../fonts/Consolas.ttf");
 }
 
-#titre, #home{
-	color: white;
-	text-align: left;
-	font-family: "lucida console", "Consolas Linux";
-	text-decoration: none;
-}
-
-#titre{
-	font-size: 17px;
-	float: left;
-	margin-left: 30px;
-	margin-top:21.5px;
-}
-
 #copyright{
 	text-align: right;
 	margin-right: 30px;
@@ -201,14 +187,6 @@ footer{
 	html{
 		background-image: url('../imgs/mobile_background.png');
 		background-size: contain;
-	}
-
-	#titre{
-		text-align: center;
-		float: unset;
-		margin-top: 22.7px;
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	.header-content{

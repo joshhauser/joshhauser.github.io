@@ -5,6 +5,42 @@ html{
   scrollbar-width: thin;
 }
 
+#title, #home{
+	color: white;
+	text-align: left;
+	font-family: "lucida console", "Consolas Linux";
+	text-decoration: none;
+}
+
+#title{
+	font-size: 17px;
+	float: left;
+	margin-left: 30px;
+	margin-top: 21.5px;
+}
+
 #skills{
   color: #02a9fc;
+}
+
+/* RESPONSIVE */
+@media(max-width: 700px){
+  #title{
+		text-align: center;
+		float: unset;
+		margin-top: 22.7px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+@media(max-width: 400px){
+  #title_separator{
+    display: none;
+  }
+
+  #label{
+    display: block;
+  }
 }
