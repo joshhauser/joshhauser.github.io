@@ -16,13 +16,29 @@
   <body>
     <div id="topbar">
       <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
-      <nav id="topmenu">
+      <nav id="mobile-menu">
+        <div id="switch" onclick="toggleMenu(5)">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <div id="toggled-menu">
+          <ul>
+            <li><a href="#header">Accueil</a></li>
+            <li><a href="#introduction">Présentation</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="menu">
         <ul>
-          <li><a href="../index.html#header">Accueil</a></li>
-          <li><a href="../index.html#introduction">Présentation</a></li>
-          <li><a href="../index.html#skills">Compétences</a></li>
-          <li><a href="../index.html#projects">Projets</a></li>
-          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="#header">Accueil</a></li>
+          <li><a href="#introduction">Présentation</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
