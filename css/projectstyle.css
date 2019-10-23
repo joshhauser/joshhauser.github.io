@@ -1,8 +1,12 @@
-/* STYLESHEET FOR PROJECT PAGES */
+html{
+  background-image: url('../imgs/backgrounds/background.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-@font-face{
-  font-family: "Consolas Linux";
-  src: url("../fonts/Consolas.ttf");
+footer{
+	margin-top: 5%;
 }
 
 #post-container a{
@@ -35,7 +39,7 @@
 
 #project-title{
 	font-size: 35px;
-	font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family:"Montserrat Semi-Bold";
 	text-align: center;
 	padding-top: 20px;
 	color: #1d1d1d;
@@ -43,13 +47,13 @@
 
 #project-subtitle{
 	font-size: 1.25em;
-	font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	color: #333;
 	margin-left: 20%;
 }
 
 .project-text{
-	font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	font-size: 100%;
 	color: #333;
 	padding-left: 20%;
@@ -61,7 +65,7 @@
 	padding-left: 25%;
 	padding-right: 20%;
 	padding-bottom: 20px;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	font-size: 100%;
 	color: #333;
 }
@@ -70,7 +74,7 @@
 	padding-left: 25%;
 	padding-right: 20%;
 	padding-bottom: 20px;
-	font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	font-size: 100%;
 	color: #333;
 }
@@ -80,14 +84,14 @@
 }
 
 #gallery{
-	font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	text-align: center;
 	padding-top: 20px;
 	color: #1d1d1d;
 }
 
 figcaption{
-	font-family:'Montserrat', 'Helvetica Neue', 'Helvetica', sans-serif;
+	font-family: "Montserrat Regular";
 	text-align: center;
 	color: #1d1d1d;
 	padding-bottom: 10px;

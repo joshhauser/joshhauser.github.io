@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content='Joshua Hauser'/>
+		<meta name="description" content="Site personnel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Application d'évaluation d'enseignements</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projectstyle.css"/>
+    <link rel="icon" href="../imgs/favicon.png"/>
+    <script src="../scripts/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="../scripts/custom_typed.js"></script>
+	</head>
+	<body>
+    <div class="header-content">
+      <a id="home" href="https://joshhauser.github.io">
+        <div id="title">
+          <span>Joshua HAUSER</span>
+          <span id="title_separator">|</span>
+          <span id="label">Développeur <span id="skills"><!-- Skills are displayed with Typed.js --></span></span>
+        </div>
+      </a>
+    </div>
+		<div id="big-container">
+			<div id="post-container">
+				<h1 id="project-title">Application d'évaluation des enseignements</h1>
+				<p class="project-text">Cette application web a été créé dans le but de mettre en application les connaissances et compétences acquises au cours du module de programmabtion web côté serveur.</p>
+				<p class="project-text">Elle permet aux étudiants d'évaluer anonyement les enseignements suivis à l'IUT.
+				Les professeurs peuvent se servir des données récoltées afin d'adapter les cours aux attentes des étudiants.</p>
+
+				<p class="project-text">L'application peut être utilisée de différentes façons:
+				<br>
+				<ul id="scenarii_projet_PHP">
+					<li>Les étudiants donnent leur appréciation concernant les enseigments qu'ils ont suivi.
+					<br/>
+					S'ils ont déjà voté, ils peuvent visualiser les apprécations qu'ils ont données.</li>
+					<li>Les professeurs visualisent les votes concernant leur(s) matières.</li>
+					<li>L'administrateur visualise le bilan des votes regroupés par enseignement et peut générer un rapport au format PDF. Il peut aussi voir l'écart type (afin d'analyser la dispersion des votes).</li>
+				</ul>
+				</p>
+				<p class="project-text">
+					<b>Équipe:</b> 6 membres
+					<br>
+					<b>Ressources:</b>
+					<ul class="ressources-list">
+						<li>Langages HTML5, CSS3 et PHP 7</li>
+						<li>Arrière-plans libres de droits</li>
+						<li>Serveur web Apache, installé sur Debian 9</li>
+						<li><a href="https://github.com/dompdf/dompdf">Librairie PHP</a> permettant de générer un fichier PDF</li>
+					</ul>
+				</p>
+				<div id="project-content">
+					<figure>
+						<a href="../imgs/appWebIUT/login.png" target="_blank"><img class="project-screenshots" src="../imgs/appWebIUT/login.png" alt="Page de connexion"/></a>
+						<figcaption>Page de connexion</figcaption>
+					</figure>
+
+					<figure>
+						<a href="../imgs/appWebIUT/etu.png" target="_blank"><img class="project-screenshots" src="../imgs/appWebIUT/etu.png" alt="Page de vote pour étudiant"/></a>
+						<figcaption>Page de vote</figcaption>
+					</figure>
+
+					<figure>
+						<a href="../imgs/appWebIUT/etu_aVote.png" targer="_blank"><img class="project-screenshots" src="../imgs/appWebIUT/etu_aVote.png" alt="Récapitulatif du vote d'un étudiant"/></a>
+						<figcaption>Récaputilatif du vote d'un étudiant</figcaption>
+					</figure>
+
+					<figure>
+						<a href="../imgs/appWebIUT/prof.png" target="_blank"><img class="project-screenshots" src="../imgs/appWebIUT/prof.png" alt="Récapitulatif des votes pour enseignant"/></a>
+						<figcaption>Récapitulatif des votes pour un(e) enseignant(e)</figcaption>
+					</figure>
+
+					<figure>
+						<a href="../imgs/appWebIUT/admin.png" target="_blank"><img class="project-screenshots" src="../imgs/appWebIUT/admin.png" alt="Récapitulatif des votes pour administrateur"/></a>
+						<figcaption>Récapitulatif des votes pour l'administrateur</figcaption>
+					</figure>
+
+				</div>
+			</div>
+		</div>
+	</body>
+  <footer>
+    <nav>
+      <ul id="social-links">
+        <li><a title="GitHub" target="_blank" href="https://github.com/joshhauser"><img class="social-icons" src="../imgs/icons/github-logo.png" alt="Logo de GitHub"/></a></li>
+        <li><a title="Mail" href="mailto:joshua.hauser@gmx.fr"><img class="social-icons" src="../imgs/icons/email.png" alt="Contact par mail"/></a></li>
+        <li><a title="LinkedIn" target="_blank" href="http://www.linkedin.com/in/joshua-hauser"><img class="social-icons" src="../imgs/icons/linkedin.png" alt="Logo de LinkedIn"/></a></li>
+      </ul>
+    </nav>
+      <p id="copyright"><a href="https://joshhauser.github.io" class="custom-link">&copy; Joshua Hauser</a></p>
+      <div class="clear"></div>
+  </footer>
+</html>

@@ -1,209 +1,130 @@
-/* STYLESHEET FOR GLOBAL SITE */
-
-html{
-  scrollbar-color: rgb(44, 44, 44) rgb(128, 128, 128);
-  scrollbar-width: thin;
-  background-color: rgb(51,51,51);
-	background-image: url('./../imgs/background-2.png');
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
+a{
+  text-decoration: none;
+  color: white;
 }
 
-#title, #home{
-	color: white;
-	text-align: left;
-	font-family: "lucida console", "Consolas Linux";
-	text-decoration: none;
+/* TOP BAR */
+#topbar{
+  position: fixed;
+  background-color: rgb(22, 22, 22);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1;
+  box-shadow: 2px 2px 2px rgb(37, 37, 37);
 }
 
-#title{
-	font-size: 17px;
-	float: left;
-	margin-left: 30px;
-	margin-top: 21.5px;
+#topbar img{
+  float: left;
+  margin-left: 20%;
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px rgb(85, 83, 83); 
 }
 
-#skills{
-  color: #02a9fc;
+#topbar #menu {
+  float: right;
+  margin-right: 20%;
+  margin-top: 25px;
+}
+
+#topbar #menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#topbar #menu ul li{
+  margin-left: 50px;
+  float:left;
+  font-family: "Montserrat Medium";
+  font-size: 16px;
+}
+
+#topbar #menu ul li:nth-child(1){
+  margin-left: 0;
+}
+
+#topbar a:hover{
+  color: #FE3838;
+  transition-duration: 0.5s;
 }
 
 footer{
-	background-color: #191919;
+  background-color: #191919;
+  font-family: "Montserrat Regular";
 	position: absolute;
 	left: 0;
-	right: 0;
-	margin-top: 5%;
-	height: 65px;
+  right: 0;
+  height: 70px;
+  display: flex;
+  /* Vertically & Horizontally centered */
+  justify-content: center;
+  align-items: center;
 }
 
-.header-content{
-	background-color: #191919;
-	left: 0;
-	right: 0;
-	top: 0;
-	position: absolute;
-	height: 60px;
+#mobile-menu, #toggled-menu{
+  display: none;
 }
 
-#menu{
-	float: right;
-	margin-right: 30px;
-	color: white;
-	font-family:  "lucida console", "Consolas Linux";
-	text-align: right;
-}
-
-#menu-links{
-	list-style: none;
-	margin-top: 23px;
-}
-
-#menu-links li{
-	display: inline-block;
-	font-size: 14px;
-}
-
-.sep{
-	color: rgba(255,255,255,0.3);
-}
-
-#social-links{
-	padding:0;
-	text-align: left;
-	margin-left: 15px;
-	float: left;
-	list-style: none;
-	list-style-position: outside;
-}
-
-#social-links li{
-	display: inline-block;
-	padding-left: 5px;
-	margin-top: 3px;
-}
-
-.social-icons{
-	width: 27px;
-}
-
-.social-icons:hover{
-	filter: invert(1);
-	transition-duration: 0.5s;
-}
-
-
-#copyright{
-	text-align: right;
-	margin-right: 30px;
-	float: right;
-	margin-top: 21.5px;
-}
-
-.custom-link{
-	text-decoration: none;
-	font-family: "lucida console";
-	color: white;
-}
-
-.custom-link:hover{
-	color: #FE3838;
-	transition-duration: 0.5s;
-}
-
-/* .loader{
-	position : fixed;
-	z-index: 1;
-	background: url('/imgs/icon-loader2.gif');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: white;
-	top : 0px;
-	left : 0px;
-	height : 100%;
-	width : 100%;
-	cursor : wait;
-}
- */
-
-/*//////////////////////////////////////*/
-/* 			         RESPONSIVE		      		*/
-/*//////////////////////////////////////*/
-@media(max-width: 700px){
-  html{
-		background-image: url('../imgs/mobile_background.png');
-		background-size: contain;
-	}
-
-  #title{
-		text-align: center;
-		float: unset;
-		margin-top: 30px;
-		margin-left: 0;
-		margin-right: 0;
+@media(max-width: 1300px){
+  #topbar img{
+    margin-left: 10%;
   }
-  
-	.header-content{
-		height: 100px;
-    margin: 0;
-	}
 
-	#menu{
-		float: unset;
-		color: white;
-		font-family:  "lucida console";
-		text-align: center;
-	}
-
-	.custom-link:focus{
-		color: #FE3838;
-		transition-duration: 0.5s;
-	}
-
-	#menu-links{
-		margin-top: 22.7px;
-	}
-
-	#menu-links li{
-		font-size: 14px;
-		margin-left: 0;
-		margin-right: 0;
+  #topbar #menu{
+    margin-right: 10%;
   }
 }
 
-
-@media(max-width: 400px){
-  html{
-		background-size: cover;
-		background-position: fixed;
-		background-repeat: no-repeat;
-  }
-  
-  #title_separator{
+@media(max-width: 950px){
+  #menu{
     display: none;
   }
 
-  #label{
-    display: block;
+  #mobile-menu{
+    display: initial;
   }
 
-  #social-links{
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		float: unset;
-		margin-bottom: 10px;
-	}
+  #mobile-menu #switch{
+    display: block;
+    position: absolute;
+    right: 2.5%;
+    margin-top: 2.5%;
+  }
 
-	#copyright{
-		text-align: center;
-		float: none;
-		margin-left:auto;
-		margin-right: auto;
-		margin-top: 0;
-	}
+  #toggled-menu{
+    margin-top: 70px;
+    color: white;
+    border-top: 1px solid rgb(37, 37, 37);
+    background-color: rgb(22, 22, 22);
+    font-family: "Montserrat Regular";
+  }
 
-	footer{
-		height: 105px;
-	}
+  #toggled-menu ul{
+    list-style-type: none;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+
+  #toggled-menu li{
+    margin-bottom: 1%;
+  }
+
+  #mobile-menu #switch span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;   
+    background: white;
+    border-radius: 3px;
+  }
+}
+
+@media(max-width: 400px){
+  #mobile-menu #switch{
+    margin-top: 6%;
+    margin-right: 2.5%
+  }
 }
