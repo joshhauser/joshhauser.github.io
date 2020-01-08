@@ -1,0 +1,114 @@
+/* STYLESHEET FOR HOME PAGE */
+
+@font-face{
+  font-family: "Consolas Linux";
+  src: url("../fonts/Consolas.ttf");
+}
+
+.content{
+  position: relative;
+}
+
+.section-inner{
+	width: 1040px;
+	max-width: 90%;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+.projects{
+	margin-top: 0.95%;
+}
+
+.project{
+	border-radius: 25px;
+}
+
+.project:hover{
+	filter:grayscale(1);
+	transition-duration:0.5s;
+}
+
+.projects .project + .project{
+  margin-left: 3.95%;
+}
+
+.projects .project{
+	display: block;
+	width: 30%;
+	margin-top: 3.95%;
+	padding-bottom: 30.7%;
+	float: left;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.projects .project:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.clear{
+	clear:both;
+}
+
+
+/*//////////////////////////////////////*/
+/* 			         RESPONSIVE		      		*/
+/*//////////////////////////////////////*/
+
+@media (max-width: 900px){
+	.projects .project{
+		width: 48.025%;
+		padding-bottom: 48.025%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.projects .project:nth-child(3n+1){
+		margin-left: 3.95%;
+	}
+
+	.projects .project:nth-child(2n+1){
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 600px){
+	.section-inner{
+		margin-top: 130px;
+  }
+  
+	.projects{
+		margin-top: 0;
+	}
+
+	.projects .project{
+		width: 100%;
+		padding-bottom: 50%;
+		min-height: 200px;
+		margin-left: 0 !important;
+		margin-top: 5%;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.projects .project:first-child{
+		margin-top: 0%;
+	}
+}
+
+@media (max-width: 400px){
+	.projects .project{
+		min-height: 220px;
+		padding-bottom: 15px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 0;
+	}
+}

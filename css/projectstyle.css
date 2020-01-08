@@ -19,8 +19,7 @@ footer{
   transition-duration: 0.5s;
 }
 
-#big-container
-{
+#big-container {
 	min-height: 800px;
 	margin-top: 150px;
 }
@@ -61,7 +60,7 @@ footer{
 	text-align: justify;
 }
 
-.ressources-list{
+.list{
 	padding-left: 25%;
 	padding-right: 20%;
 	padding-bottom: 20px;
@@ -95,13 +94,13 @@ figcaption{
 	text-align: center;
 	color: #1d1d1d;
 	padding-bottom: 10px;
-  margin-top: 1%;
-  margin-bottom: 3%;
+	margin-top: 1%;
+	margin-bottom: 3%;
 }
 
-figure a img {
+/* figure a img {
   border: 1px solid gray;
-}
+} */
 
 #project-content{
 	text-align:center;
