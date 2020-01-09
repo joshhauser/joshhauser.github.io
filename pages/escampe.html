@@ -17,14 +17,24 @@
 	</head>
 	<body>
 		<div id="topbar">
-    <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
-    <nav id="mobile-menu">
-      <div id="switch" onclick="toggleMenu(5)">
+      <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
+      <nav id="mobile-menu">
+        <div id="switch" onclick="toggleMenu(5)">
           <span class="burger"></span>
           <span class="burger"></span>
           <span class="burger"></span>
         </div>
-      <div id="toggled-menu">
+        <div id="toggled-menu">
+          <ul>
+            <li><a href="../index.html#header">Accueil</a></li>
+            <li><a href="../index.html#introduction">Présentation</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../index.html#projects">Projets</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="menu">
         <ul>
           <li><a href="../index.html#header">Accueil</a></li>
           <li><a href="../index.html#introduction">Présentation</a></li>
@@ -32,35 +42,31 @@
           <li><a href="../index.html#projects">Projets</a></li>
           <li><a href="../index.html#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="menu">
-      <ul>
-        <li><a href="../index.html#header">Accueil</a></li>
-        <li><a href="../index.html#introduction">Présentation</a></li>
-        <li><a href="../index.html#skills">Compétences</a></li>
-        <li><a href="../index.html#projects">Projets</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-		<div id="big-container">
-			<div id="post-container">
-				<h1 id="project-title">Escampe</h1>
+      </nav>
+    </div>
+    <div id="big-container">
+      <div id="post-container">
+        <h1 id="project-title">Escampe</h1>
         <p class="project-text">Escampe est un jeu de plateau pour deux joueurs. Comme les échecs ou encore les dames, les pions sont soit noirs, soit blancs.</p>
         <p class="project-text">Il existe deux types de pions: les licornes et les paladins. Chaque joueur possède une licorne et cinq paladins.</p>
         <p class="project-text">Le but du jeu est de capturer la licorne. La prise d'une licorne se fait en déplaçant un paladin sur la case où elle se situe.</p>
         <p class="project-text">Concernant les déplacements, ils peuvent se faire en ligne droite ou en ligne brisée. Le nombre de cases varie en fonction du nombre de liserés que comporte la case sur laquelle un paladin se situe.</p>
         <p class="project-text">
-            <b>Genre:</b> réflexion, challenge
-            <br>
-            <b>Support:</b> Windows
-            <br>
-            <b>Ressources:</b>
+          <b>Genre:</b> réflexion, plateau, stratégie
+          <br>
+          <b>Support:</b> Windows, Linux
+          <br>
+          <b>Ressources:</b>
         </p>
-        </div>
-			</div>
-		</div>
+        <ul class="list">
+          <li>Langage C</li>
+          <li><a href="https://www.libsdl.org/">SDL 1.2</a></li>
+        </ul>
+        <div id="button-container">
+					<input type="button" id="download-button" value="Dépôt Github" onclick="window.open('https:\/\/github.com/joshhauser/Escampe');">
+				</div>
+      </div>
+    </div>
 	</body>
 <footer>
   <p id="copyright"><a href="https://joshhauser.github.io" class="custom-link">&copy; Joshua Hauser</a></p>

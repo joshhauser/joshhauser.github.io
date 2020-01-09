@@ -16,15 +16,25 @@
     <script src="../scripts/features.js"></script>
 	</head>
 	<body>
-  <div id="topbar">
-    <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
-    <nav id="mobile-menu">
-      <div id="switch" onclick="toggleMenu(5)">
-          <span class="burger"></span>
-          <span class="burger"></span>
-          <span class="burger"></span>
+    <div id="topbar">
+      <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
+      <nav id="mobile-menu">
+        <div id="switch" onclick="toggleMenu(5)">
+            <span class="burger"></span>
+            <span class="burger"></span>
+            <span class="burger"></span>
+          </div>
+        <div id="toggled-menu">
+          <ul>
+            <li><a href="../index.html#header">Accueil</a></li>
+            <li><a href="../index.html#introduction">Présentation</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../index.html#projects">Projets</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
         </div>
-      <div id="toggled-menu">
+      </nav>
+      <nav id="menu">
         <ul>
           <li><a href="../index.html#header">Accueil</a></li>
           <li><a href="../index.html#introduction">Présentation</a></li>
@@ -32,18 +42,8 @@
           <li><a href="../index.html#projects">Projets</a></li>
           <li><a href="../index.html#contact">Contact</a></li>
         </ul>
-      </div>
-    </nav>
-    <nav id="menu">
-      <ul>
-        <li><a href="../index.html#header">Accueil</a></li>
-        <li><a href="../index.html#introduction">Présentation</a></li>
-        <li><a href="../index.html#skills">Compétences</a></li>
-        <li><a href="../index.html#projects">Projets</a></li>
-        <li><a href="../index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+      </nav>
+    </div>
 		<div id="big-container">
 			<div id="post-container">
 				<h1 id="project-title">TODO LIST</h1>
@@ -57,17 +57,17 @@
         <p class="project-text">Chaque liste ainsi que chaque tâche peut être supprimée lorsque l'utilisateur le souhaite.</p>
         <p class="project-text">
 					<b>Ressources:</b>
-					<ul class="ressources-list">
-            <li>Langages HTML5, CSS3, PHP 7 et SQL</li>
-            <li>Framework <a href="https://angular.io/">Angular 7</a> (framework écrit en TypeScript)</li>
-            <li>Serveur web Apache 2</li>
-            <li>Serveur MySQL</li>
-            <li>SGBD phpMyAdmin</li>
-            <li>NPM, gestionnaire de paquets Node.js</li>
-            <li><a href="https://material.angular.io/">Angular Material:</a> librairie de composants pour Angular</li>
-            <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons:</a> bibliothèques d'icônes</li>
-					</ul>
         </p>
+        <ul class="list">
+          <li>Langages HTML5, CSS3, PHP 7 et SQL</li>
+          <li>Framework <a href="https://angular.io/">Angular 7</a> (framework écrit en TypeScript)</li>
+          <li>Serveur web Apache 2</li>
+          <li>Serveur MySQL</li>
+          <li>SGBD phpMyAdmin</li>
+          <li>NPM, gestionnaire de paquets Node.js</li>
+          <li><a href="https://material.angular.io/">Angular Material:</a> librairie de composants pour Angular</li>
+          <li><a href="https://material.io/resources/icons/?style=baseline">Material Icons:</a> bibliothèques d'icônes</li>
+        </ul>
         <div id="project-content">
 					<figure>
 						<a href="../imgs/todolist/board_creation_form.png" target="_blank"><img class="project-screenshots" src="../imgs/todolist/board_creation_form.png" alt="Formulaire de création de liste"/></a>
