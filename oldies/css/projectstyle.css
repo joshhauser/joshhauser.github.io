@@ -114,7 +114,7 @@ figure a img {
 }
 
 
-#b-button{
+#download-button{
 	background: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -134,14 +134,14 @@ figure a img {
 	border-style: solid;
 }
 
-#b-button:hover{
+#download-button:hover{
 	background: #191919;
 	transition-duration: 0.20s;
 	cursor: pointer;
 	color: white;
 }
 
-#bouton{
+##button-container{
 	padding-bottom: 20px;
 }
 
