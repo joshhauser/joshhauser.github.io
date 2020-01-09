@@ -57,7 +57,7 @@
 	text-align: justify;
 }
 
-.ressources-list{
+.list{
 	padding-left: 25%;
 	padding-right: 20%;
 	padding-bottom: 20px;
@@ -166,7 +166,7 @@ figure a img {
 		text-align: center;
 	}
 
-	.ressources-list{
+	.list{
 		padding-left: 30%;
 		padding-right: 15%;
 	}
@@ -190,7 +190,7 @@ figure a img {
 		text-align: center;
 	}
 
-	.ressources-list{
+	.list{
 		padding-left: 30%;
 		padding-right: 15%;
 	}
