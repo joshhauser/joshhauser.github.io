@@ -144,8 +144,12 @@ figcaption{
 	color: white;
 }
 
-#button-container{
+#button-container-bottom{
 	padding-bottom: 20px;
+}
+
+#button-container-top {
+  padding-top: 20px;
 }
 
 
