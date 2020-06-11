@@ -117,7 +117,7 @@ figcaption{
 }
 
 
-#download-button{
+.project-page-button{
 	background: none;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -137,7 +137,7 @@ figcaption{
 	border-style: solid;
 }
 
-#download-button:hover{
+.project-page-button:hover{
 	background: #191919;
 	transition-duration: 0.20s;
 	cursor: pointer;
