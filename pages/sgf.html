@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content='Joshua Hauser'/>
+		<meta name="description" content="Site personnel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>SGF</title>
+
+		<link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projectstyle.css"/>
+    <link rel="icon" href="../imgs/favicon.png"/>
+
+    <script src="../scripts/features.js"></script>
+	</head>
+	<body>
+		<div id="topbar">
+      <a href="../index.html#heder"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
+      <nav id="mobile-menu">
+        <div id="switch" onclick="toggleMenu()">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </div>
+        <div id="toggled-menu">
+          <ul>
+            <li><a href="../index.html#header">Accueil</a></li>
+            <li><a href="../index.html#introduction">Présentation</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../index.html#projects">Projets</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html#header">Accueil</a></li>
+          <li><a href="../index.html#introduction">Présentation</a></li>
+          <li><a href="../index.html#skills">Compétences</a></li>
+          <li><a href="../index.html#projects">Projets</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="big-container">
+			<div id="button-container-top">
+				<input type="button" class="project-page-button" value="Retour aux projets" onclick="window.location.href='https:\/\/joshhauser.github.io\/pages\/projects.html';">
+			</div>
+      <div id="post-container">
+        <h1 id="project-title">SGF</h1>
+        <p class="project-text">
+          Le projet SGF a été réalisé durant ma première année d'études en école d'ingénieur.
+          <br>
+          Le but de ce projet était de créer un mini système de gestion de fichiers, basé sur le principe du SGF des systèmes Unix.
+          Le programme reprend donc le fonctionnement des inodes<sup>1</sup> et blocs<sup>2</sup> d'Unix.
+          <br>
+          L'utilisateur interagit avec le SGF au travers d'un interpréteur de commandes, inspiré du fonctionnement du shell.
+        </p>
+        <p class="project-text">
+          Le SGF comporte les fonctionnalités suivantes:
+        </p>
+        <ul class="list">
+          <li>Création</li>
+          <li>Copie</li>
+          <li>Déplacement</li>
+          <li>Suppression (concernant les répertoires, seuls ceux qui sont vides sont supprimés)</li>
+          <li>Lecture de fichier</li>
+          <li>Navigation</li>
+          <li>...</li>
+        </ul>
+
+        <p class="project-text">
+          Le SGF utilise un disque simulé par un fichier, à la manière des disques de machines virtuelles.
+          Ce disque a une capacité de 150Mo. L'utilisateur a à sa disposition 50 inodes et 150 blocs (cela peut-être modifié dans le fichier <span style="color: #ff6666; font-weight: bold">sgf.h</span> du projet).
+        </p>
+        
+        <p class="project-text" id="meaning">
+          <b>1.</b> Un inode est une structure de données permettant d'avoir les informations fondamentales d'un fichier. Un inode permet d'identifier un fichier.
+          <br>
+          <b>2.</b> Un bloc est une section de disque utilisée pour stocker des données. Un inode peut pointer sur un ou plusieurs blocs.
+        </p>
+        
+        <p class="project-text"><b>Ressources:</b></p>
+        <ul class="list">
+          <li>Langage C</li>
+          <li>Makefile</li>
+          <li>GitHub</li>
+        </ul>
+        <h3 id="gallery">Galerie d'images</h3>
+        <div id="project-content">
+          <!-- <figure>
+            <a href="../imgs/markdownlite/home.png" target="_blank"><img class="project-screenshots" src="../imgs/markdownlite/home.png" alt="Écran d'accueil"/></a>
+            <figcaption>Écran d'accueil</figcaption>
+          </figure> -->
+          <figure>
+            <a href="../imgs/sgf/home.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/home.png" alt="Accueil"></a>
+            <figcaption>Accueil</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/sgf/test_cmd.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/test_cmd.png" alt="Exemples de commandes"></a>
+            <figcaption>Exemples de commandes</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/sgf/cd.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/cd.png" alt="Navigation dans l'arborescence"></a>
+            <figcaption>Navigation dans l'arborescence</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/sgf/echo.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/echo.png" alt="Redirectioon de flux vers un fichier"></a>
+            <figcaption>Redirectioon de flux vers un fichier</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/sgf/cat.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/cat.png" alt="Lecture de fichier"></a>
+            <figcaption>Lecture de fichier</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/sgf/rm_error.png" target="_blank"><img class="project-screenshots" src="../imgs/sgf/rm_error.png" alt="Exemple d'erreur"></a>
+            <figcaption>Exemple d'erreur</figcaption>
+          </figure>
+        </div>
+				<div id="button-container-bottom">
+          <input type="button" class="project-page-button" value="Dépôt Github" onclick="window.open('https:\/\/github.com/joshhauser/SGF');">
+				</div>
+      </div>
+    </div>
+	</body>
+<footer>
+  <p id="copyright"><a href="https://joshhauser.github.io" class="custom-link">&copy; Joshua Hauser</a></p>
+	<div class="clear"></div>
+</footer>
+</html>
