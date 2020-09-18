@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="author" content='Joshua Hauser'/>
+		<meta name="description" content="Site personnel"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<title>Yoté</title>
+
+		<link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/projectstyle.css"/>
+    <link rel="icon" href="../imgs/favicon.png"/>
+
+    <script src="../scripts/features.js"></script>
+	</head>
+	<body>
+		<div id="topbar">
+      <a href="../index.html#header"><img src="../imgs/miscellaneous/favicon.png" width="50px" title="Jdenticon" alt="Icon"></a>
+      <nav id="mobile-menu">
+        <div id="switch" onclick="toggleMenu()">
+          <span class="burger"></span>
+          <span class="burger"></span>
+          <span class="burger"></span>
+        </div>
+        <div id="toggled-menu">
+          <ul>
+            <li><a href="../index.html#header">Accueil</a></li>
+            <li><a href="../index.html#introduction">Présentation</a></li>
+            <li><a href="../index.html#skills">Compétences</a></li>
+            <li><a href="../index.html#projects">Projets</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="menu">
+        <ul>
+          <li><a href="../index.html#header">Accueil</a></li>
+          <li><a href="../index.html#introduction">Présentation</a></li>
+          <li><a href="../index.html#skills">Compétences</a></li>
+          <li><a href="../index.html#projects">Projets</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="big-container">
+			<div id="button-container-top">
+				<input type="button" class="project-page-button" value="Retour aux projets" onclick="window.location.href='https:\/\/joshhauser.github.io\/pages\/projects.html';">
+			</div>
+      <div id="post-container">
+        <h1 id="project-title">Yoté</h1>
+        <p class="project-text">Le Yoté est un jeu de stratégie pour deux joueurs. Initialement, les points sont blancs ou noirs. Le but de ce jeu est de capturer tous les pions de l'adversaire.</p>
+        <p class="project-text">Dans le cadre de ce projet universitaire, le jeu a été transposé dans un univers fantastique. Les pions sont alors remplacés par des orcs et des démons.</p>
+        <p class="project-text"><b><u>Règles:</u></b></p>
+        <p class="project-text">Au début du jeu, le plateau est vide. Chaque joueur possède 12 pions.
+          <br><br>
+          A chaque tour, un joueur peut poser un pion sur le plateau, ou bien déplacer un pion déjà positionné (verticalement ou horizontalement).
+          <br>
+          Lors d'un déplacement, le joueur ne peut pas sauter par dessus un de ses pions. En revanche, il peut sauter par-dessus un pion adverse, provoquant ainsi sa capture. 
+          <br>
+          Une seule capture par mouvement est autorisée.
+          La capture d'un pion adverse permet au joueur d'en capturer un 2e soit sur le plateau, soit dans la réserve de l'adversaire, si elle n'est pas vide.
+          <br><br>
+          Si un joueur ne peut plus déplacer ou poser de pion, alors il a perdu la partie.
+        </p>
+        
+        <p class="project-text"><b>Ressources:</b></p>
+        <ul class="list">
+          <li>Langage C</li>
+          <li>Bibliothèque standard du C</li>
+          <li>Librairie graphique <a href="https://www.libsdl.org/">SDL 1.2</a> + SDL TTF</li>
+          <li>Création des sprites sous <a href="https://www.microsoft.com/fr-fr/p/pix2d-pixel-art-studio/9nblggh1zdfv?activetab=pivot:overviewtab">Pixel Art Studio</a> et <a href="https://www.gimp.org/">Gimp</a></li>
+          <li>Compilateur GCC + script bash pour automatiser la compilation</li>
+        </ul>
+        <h3 id="gallery">Galerie d'images</h3>
+        <div id="project-content">
+          <figure>
+            <a href="../imgs/yote/home_menu.png" target="_blank"><img class="project-screenshots" src="../imgs/yote/home_menu.png" alt="Menu"></a>
+            <figcaption>Menu</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/yote/gamemode_choice.png" target="_blank"><img class="project-screenshots" src="../imgs/yote/gamemode_choice.png" alt="Choix du mode de jeu"></a>
+            <figcaption>Choix du mode de jeu</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/yote/rules.png" target="_blank"><img class="project-screenshots" src="../imgs/yote/rules.png" alt="Écran des règles du jeu"></a>
+            <figcaption>Écran des règles du jeu</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/yote/scores.png" target="_blank"><img class="project-screenshots" src="../imgs/yote/scores.png" alt="Écran des scores"></a>
+            <figcaption>Écran des scores</figcaption>
+          </figure>
+          <figure>
+            <a href="../imgs/yote/game.png" target="_blank"><img class="project-screenshots" src="../imgs/yote/game.png" alt="Partie en cours"></a>
+            <figcaption>Partie en cours</figcaption>
+          </figure>
+        </div>
+				<div id="button-container-bottom">
+          <input type="button" class="project-page-button" value="Dépôt Github" onclick="window.open('https:\/\/github.com/joshhauser/istyYote');">
+				</div>
+      </div>
+    </div>
+	</body>
+<footer>
+  <p id="copyright"><a href="https://joshhauser.github.io" class="custom-link">&copy; Joshua Hauser</a></p>
+	<div class="clear"></div>
+</footer>
+</html>
