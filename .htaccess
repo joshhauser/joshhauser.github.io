@@ -1,6 +1,0 @@
-DirectoryIndex index.html
-Options -Indexes
-ErrorDocument 400 ./imgs/404/404notfound.png
-ErrorDocument 401 ./imgs/404/404notfound.png
-ErrorDocument 403 ./imgs/404/404notfound.png
-ErrorDocument 404 ./imgs/404/404notfound.png
