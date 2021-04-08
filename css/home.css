@@ -39,7 +39,7 @@ body{
 }
 
 #header h2 #typedSkills{
-  color: rgb(243, 60, 47);
+  color: rgb(255, 70, 57);
 }
 
 /* INTRODUCTION */
@@ -59,39 +59,13 @@ body{
   font-family: "Montserrat Semi-Bold";
   font-size: 4em;
   text-align: center;
-  color: white
+  color: white;
 }
 
 #introduction-content{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  width: 50%;
-  height: 90%;
+  display: none;
 }
 
-#id-photo img{
-  float: left;
-  border-radius: 50%;
-  width: 220px;
-  border: 0.8px solid rgb(179, 179, 179);
-}
-
-#introduction-text{
-  color: white;
-  margin-left: 5%;
-  float: right;
-}
-
-#introduction-text h2{
-  font-family: "Montserrat Semi-Bold";
-  margin-top: 1%;
-}
-
-#introduction-text p{
-  font-family: "Montserrat Regular";
-}
 
 /* SKILLS */
 
@@ -291,7 +265,7 @@ body{
   }
 }
 
-@media(max-width: 900px){
+@media(max-width: 950px){
   #introduction-content{
     display: block;
     margin-left: auto;
@@ -316,6 +290,15 @@ body{
     color: white;
     margin-left: 5%;
     float: none;
+  }
+
+  #introduction-text h2{
+    font-family: "Montserrat Semi-Bold";
+    margin-top: 1%;
+  }
+  
+  #introduction-text p{
+    font-family: "Montserrat Regular";
   }
   
   #skills h2{

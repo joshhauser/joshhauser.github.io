@@ -5,35 +5,38 @@
 }
 
 #terminal{
-  margin-top: 5%
+  margin-top: 2.5%;
 }
 
 #terminalBody{
-    background-color: rgb(22, 21, 21);
-    width: 800px;
-    height: 300px;
-    border-radius: 0 0 8px 8px;
-    overflow-y: auto;
-    scrollbar-width: thin;
+  background-color: rgb(37, 37, 37);
+  width: 900px;
+  height: 500px;
+  border-radius: 0 0 8px 8px;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 #terminalBody a{
   text-decoration: underline;
-  color: white;
 }
 
 #terminalHeader{
-    background: rgb(48, 48, 48);
-    text-align: center;
-    width: 800px;
-    color: white;
-    height: 30px;
-    border-radius: 8px 8px 0 0;
+  background: rgb(70, 70, 70);
+  text-align: center;
+  width: 900px;
+  color: white;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
 }
 
 #terminalBody, #terminalHeader{
-    font-family: "Consolas", "Consolas Linux";
-    margin: 0 auto;
+  font-family: "Consolas", "Consolas Linux";
+  margin: 0 auto;
+}
+
+#typed .introductionLabel {
+  color: rgb(218, 60, 60);
 }
 
 /* RESPONSIVE */
@@ -47,7 +50,7 @@
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 950px){
   #terminal, #terminalBody, #terminalHeader{
     display: none;
   }
