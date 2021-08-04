@@ -28,11 +28,69 @@
   color: white;
   height: 30px;
   border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.terminal-buttons-div {
+  display: flex;
+  margin-left: .5%;
+  justify-self: flex-start;
+  position: absolute;
+}
+
+.terminal-buttons-div .col {
+  padding: 0 10%;
+}
+
+.terminal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.terminal-button:hover span {
+  display: block;
+  color: rgb(46, 46, 46);
+  position: absolute;
+  cursor: pointer
+}
+
+.terminal-button span {
+  display: none;
+}
+
+#tb-1 {
+  background-color: rgb(218, 61, 61);
+}
+
+#tb-2 {
+  background-color: rgb(218, 163, 61);
+}
+
+#tb-3 {
+  background-color: rgb(100, 165, 74);
+}
+
+#terminalHeader #terminal-title {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
 }
 
 #terminalBody, #terminalHeader{
   font-family: "Consolas", "Consolas Linux";
   margin: 0 auto;
+}
+
+.terminal-button .terminal-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 #typed .introductionLabel {

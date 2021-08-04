@@ -77,10 +77,30 @@
       </div>
       <div id="terminal">
         <div id="terminalHeader">
-          <div style="display: block; float: left; margin-left: 10px; margin-top: 8px; width: 15px; height: 15px; background-color: rgb(218, 61, 61); border-radius: 100%;"></div>
+          <!-- <div class="terminal-button" style="display: block; float: left; margin-left: 10px; margin-top: 8px; width: 15px; height: 15px; background-color: rgb(218, 61, 61); border-radius: 100%;">
+          <span class="terminal-icon">&times;</span>
+          </div>
           <div style="display: block; float: left; margin-left: 10px; margin-top: 8px; width: 15px; height: 15px; background-color: rgb(218, 163, 61); border-radius: 100%;"></div>
           <div style="display: block; float: left; margin-left: 10px; margin-top: 8px; width: 15px; height: 15px; background-color: rgb(100, 165, 74); border-radius: 100%;"></div>
-          <p style="text-align: center; padding-top: 5px;">Terminal — bash</p>
+           -->
+          <div class="terminal-buttons-div">
+            <div class="col">
+              <div class="terminal-button" id="tb-1">
+                <span>&times;</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="terminal-button" id="tb-2">
+                <span>-</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="terminal-button" id="tb-3">
+                <span>+</span>
+              </div>
+            </div>
+          </div>
+          <span id="terminal-title">Terminal — bash</span>
         </div>
         <div id="terminalBody">
           <div style="margin-left: 5px; margin-top: 5px; color: white">
