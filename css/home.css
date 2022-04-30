@@ -95,7 +95,7 @@ body{
 
 /* SKILLS */
 
-#skills{
+/* #skills{
   border-top: 3px solid rgb(90, 89, 89);
   background-color:  white;
   top: 0;
@@ -103,9 +103,9 @@ body{
   right:0;
   padding-top: 5%;
   padding-bottom: 10%;
-}
+} */
 
-#skills h1{
+/* #skills h1{
   margin: 0;
   font-family: "Montserrat Semi-Bold";
   font-size: 4em;
@@ -142,7 +142,7 @@ body{
   width: 64px;
   height: 64px;
 }
-
+ */
 
 /* PROJECTS */
 
