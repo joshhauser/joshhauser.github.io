@@ -318,7 +318,7 @@ body{
     float: none;
   }
   
-  #skills h2{
+  /* #skills h2{
     text-align: center;
     margin-top: 10%;
     margin-bottom: 5%;
@@ -340,7 +340,7 @@ body{
 
   .skills li:nth-child(4n+1){
     margin-left: 0 !important;
-  }
+  } */
 }
 
 
@@ -353,7 +353,7 @@ body{
     font-size: 1.5em;
   } 
 
-  .skills ul{
+  /* .skills ul{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -369,5 +369,5 @@ body{
 
   .skills li:nth-child(3n+1){
     margin-left: 0 !important;
-  }
+  } */
 }
