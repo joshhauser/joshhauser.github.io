@@ -1,15 +1,19 @@
-<<<<<<< Updated upstream
 @font-face{
   font-family: "Montserrat Medium";
-  src: url("../fonts/Montserrat/Montserrat-Medium.ttf")
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
 }
 
 @font-face{
   font-family: "Montserrat Semi-Bold";
-  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf")
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
 }
 
 @font-face{
   font-family: "Montserrat Regular";
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf")
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Inconsolata Regular';
+  src: url("../fonts/Inconsolata/static/Inconsolata/Inconsolata-Regular.ttf");
 }

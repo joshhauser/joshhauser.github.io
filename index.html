@@ -16,226 +16,33 @@
 
   <link rel="icon" href="imgs/miscellaneous/favicon.png">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/notion.css">
   <!-- JQuery | Typed.js -->
   <script src="scripts/jquery-3.4.1.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-  <script src="scripts/custom_typed.js"></script>
   <script src="scripts/features.js"></script>
 </head>
 
 <body>
   <div id="topbar">
-    <a href="#header">
-      <img src="imgs/miscellaneous/favicon.png" width="50px" alt="Icon">
-    </a>
-    <nav id="mobile-menu">
-      <div id="switch" onclick="toggleMenu()">
-        <span class="burger"></span>
-        <span class="burger"></span>
-        <span class="burger"></span>
-      </div>
-      <div id="toggled-menu">
-        <ul>
-          <li><a href="#header">Accueil</a></li>
-          <li><a href="#introduction">Présentation</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <div id="topbar-content">
+      <a href="https://joshhauser.github.io/">
+      </a>
+      <nav>
+        <ul id="menu">
+          <li class="menu-item active">Présentation</li>
+          <li class="menu-item">Compétences</li>
+          <li class="menu-item">Projets</li>
+          <li class="menu-item">Contact</li>
         </ul>
-      </div>
-    </nav>
-    <nav id="menu">
-      <ul>
-        <li><a href="#header">Accueil</a></li>
-        <li><a href="#introduction">Présentation</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#projects">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div id="content">
-    <!-- Header -->
-    <div id="header">
-      <h1>Joshua HAUSER</h1>
-      <h2>Développeur <span id="typedSkills"></span></h2>
+      </nav>
     </div>
-    <!-- Introduction -->
-    <div id="introduction">
-      <h1>Présentation</h1>
-      <div id="introduction-content">
-        <div id="id-photo">
-          <img src="imgs/miscellaneous/id_photo.jpg">
-        </div>
-        <div id="introduction-text">
-          <h2>Joshua HAUSER</h2>
-          <p>Je suis étudiant en 5e année d'ingénierie informatique à l'Institut des Sciences et Techniques des Yvelines
-            (ISTY).</p>
-          <p>Dans le cadre de ma formation, j'effectue différents projets universitaires mais aussi personnels, que vous
-            pouvez retrouver sur mon <a href="https://github.com/joshhauser/">Github</a> et qui sont présentés sur ce
-            portfolio.</p>
-          <p>De temps en temps, j'écris également des articles sur <a title="Profil Medium" alt="Profil Medium"
-              class="custom-link" href="https://medium.com/@h-josh">Medium</a>.</p>
-        </div>
-      </div>
-    </div>
-    <!-- Skills -->
-    <div id="skills">
-      <div class="skills">
-        <article id="3068b774-5a05-4315-b63b-9b4a0aec1925" class="page sans">
-          <div class="page-body">
-            <h1 id="8a516d28-d6c6-454e-8159-40af42203a7f" class="">Compétences</h1>
-            <h2 id="d153c510-11ff-49bb-b917-302290009355" class="">💻 Compétences techniques</h2>
-            <div id="5213d87b-3a3d-4905-8672-cdbdd6556e4b" class="column-list">
-              <div id="0f9257f5-f6cd-4b78-b8d1-b65bc120a264" style="width:50%" class="column">
-                <h3 id="ef33f6be-55ad-4609-a49a-e9333bb8f840" class="">Langages</h3>
-                <ul id="6579cbc5-18d5-4542-9e1e-c505b2537abc" class="bulleted-list">
-                  <li style="list-style-type:disc">C, Java, Python</li>
-                </ul>
-                <ul id="4d496e46-a8a6-4527-9841-6d661f571c12" class="bulleted-list">
-                  <li style="list-style-type:disc">HTML, CSS, Markdown</li>
-                </ul>
-                <ul id="32e52225-c561-4309-9f78-8df15aeafc8d" class="bulleted-list">
-                  <li style="list-style-type:disc">JavaScript, PHP</li>
-                </ul>
-              </div>
-              <div id="f60c25de-6264-426e-a2ab-2b5eae726adb" style="width:50%" class="column">
-                <h3 id="577846e8-5819-4566-b29a-4d90aa42865a" class="">Frameworks et outils de développement</h3>
-                <ul id="1190d919-f9c6-4f12-afcb-5a70604dd7f0" class="bulleted-list">
-                  <li style="list-style-type:disc">Angular, NodeJS, Spring, Hibernate</li>
-                </ul>
-                <ul id="60ac11d5-1689-4000-9a91-8b3e6851ee6c" class="bulleted-list">
-                  <li style="list-style-type:disc">Eclipse, IntelliJ IDEA, Android Studio,</li>
-                </ul>
-              </div>
-            </div>
-            <div id="0f683216-fcec-446b-ba2f-419d3614ef46" class="column-list">
-              <div id="bbf73754-05c0-4611-92a9-fc0da550390c" style="width:50%" class="column">
-                <h3 id="4b45bf7b-b19c-411a-9ed5-de7c0d26e747" class="">Bases de données</h3>
-                <ul id="60772178-ac47-4d7c-967e-dabf9b3635ef" class="bulleted-list">
-                  <li style="list-style-type:disc">Langages: SQL, PL/SQL</li>
-                </ul>
-                <ul id="3526e9fc-0ea6-43ba-a442-6dfe9e7bfeea" class="bulleted-list">
-                  <li style="list-style-type:disc">SGBD : MySQL, Oracle, PostgreSQL</li>
-                </ul>
-              </div>
-              <div id="3c777d68-60ca-457e-8806-8734099b8db8" style="width:50%" class="column">
-                <h3 id="4719df06-5f3f-43a3-b709-46975af86a80" class="">Systèmes d’exploitation</h3>
-                <ul id="166e9b73-5b3d-429f-a94d-beba46a8df98" class="bulleted-list">
-                  <li style="list-style-type:disc">Windows</li>
-                </ul>
-                <ul id="b23874fb-c81a-4285-940f-0f1786c0be71" class="bulleted-list">
-                  <li style="list-style-type:disc">Linux (Fedora, CentOS, Debian...)</li>
-                </ul>
-              </div>
-            </div>
-            <h3 id="773e1177-f845-4177-815c-3e53c5420e08" class="">Outils divers</h3>
-            <div id="1ef25ac7-8ff3-4c94-9b70-5f270e528fa9" class="column-list">
-              <div id="0dd8919e-3716-44b2-8322-77c566348b69" style="width:50%" class="column">
-                <ul id="ed2a6e1c-c831-4354-b8c5-8f0be9d07d4a" class="bulleted-list">
-                  <li style="list-style-type:disc">Git</li>
-                </ul>
-                <ul id="9e00496b-8c2b-4f23-adbb-1d91c0f1d32e" class="bulleted-list">
-                  <li style="list-style-type:disc">Figma (conception d’interfaces utilisateur)</li>
-                </ul>
-                <ul id="b75d692a-12e4-462d-bd57-456b52b2411a" class="bulleted-list">
-                  <li style="list-style-type:disc">Suites bureautiques Microsoft Office &amp; Libre Office</li>
-                </ul>
-                <ul id="9136e52c-15b9-476a-9d1e-d34f18631a70" class="bulleted-list">
-                  <li style="list-style-type:disc">Docker</li>
-                </ul>
-              </div>
-              <div id="3349a757-f7a7-4f9b-bbb3-f5546ba086b6" style="width:50%" class="column">
-                <ul id="11291d10-0215-482d-a75a-eb91eb2e6793" class="bulleted-list">
-                  <li style="list-style-type:disc">Modélisation UML via Visual Paradigm &amp; StarUML</li>
-                </ul>
-                <ul id="6ffbe0fa-d25d-4e5a-ab8a-5481c47cb455" class="bulleted-list">
-                  <li style="list-style-type:disc">Rédaction de documents avec LaTeX</li>
-                </ul>
-                <ul id="630085e4-86a0-4f6c-b28f-46f551b4135e" class="bulleted-list">
-                  <li style="list-style-type:disc">Gestion de projets : Trello, Jira</li>
-                </ul>
-              </div>
-            </div>
-            <h2 id="10fc9d03-523d-488c-8f46-8a38e3b19492" class="">👨🏼 Soft skills et autres</h2>
-            <ul id="d37a9882-c701-49af-9462-bf53e11b3e8f" class="bulleted-list">
-              <li style="list-style-type:disc">Autonomie</li>
-            </ul>
-            <ul id="6b02efd9-c5d6-44f0-8997-9736258f9dda" class="bulleted-list">
-              <li style="list-style-type:disc">Rigueur</li>
-            </ul>
-            <ul id="2c379233-8fd5-4602-b072-b737a9d0afa4" class="bulleted-list">
-              <li style="list-style-type:disc">Facilité d’apprentissage</li>
-            </ul>
-            <ul id="9e939d75-4253-4846-aa06-afee84193b6c" class="bulleted-list">
-              <li style="list-style-type:disc">Communication</li>
-            </ul>
-            <ul id="0cda3a7c-a580-41c9-b8bb-a9c101f8a8bf" class="bulleted-list">
-              <li style="list-style-type:disc">Entraide et solidarité</li>
-            </ul>
-            <ul id="5ebce931-fd94-4330-9e04-7a216db30b2c" class="bulleted-list">
-              <li style="list-style-type:disc">Gestion de projets</li>
-            </ul>
-            <hr id="82f6d47a-7183-4481-a9f8-e8ae9a9e2d5d" />
-            <h2 id="a29c6861-227e-4399-a8fd-0a25a12c011a" class="">🗣 Langues</h2>
-            <div id="9ce7ecf8-4349-473b-984e-7267f9613dd0" class="column-list">
-              <div id="0f4899f5-7fb9-49f1-a653-38f8a87f29cc" style="width:50%" class="column">
-                <h3 id="2378f7e5-53c6-4009-9d1c-348ff5e838d1" class="">Anglais 🇬🇧</h3>
-                <p id="92e25a78-cd1a-41ad-8e3b-0d72c960235c" class="">Parlé et écrit (940 points au TOEIC, résultat
-                  obtenu en
-                  2021)</p>
-              </div>
-              <div id="e4fbf727-88d2-45db-8ed2-44dccbc014fc" style="width:50%" class="column">
-                <h3 id="68436522-e202-4dd2-b0d1-43bd5c916f69" class="">Allemand 🇩🇪</h3>
-                <p id="8565b7c5-dda9-4cf7-b01b-d06a336b97bf" class="">Parlé et écrit, niveau débutant</p>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-    <!-- Projects -->
-    <div id="projects">
-      <h1>Projets</h1>
-      <div id="projects-content">
-        <div class="projects-boxes">
-          <a title="SGF - Système de gestion de fichiers" class="project" alt="SGF - Système de gestion de fichiers"
-            style="background-image: url('./imgs/covers/sgf.png')" href="./pages/sgf.html"></a>
-          <a title="Markdown Lite - Editeur Markdown allégé" class="project" alt="Markdown Lite"
-            style="background-image: url('./imgs/covers/markdownlite.png')" href="./pages/markdownlite.html"></a>
-          <a title="Yoté - Jeu de stratégie" class="project" alt="Yoté"
-            style="background-image: url('./imgs/covers/yote.png')" href="./pages/yote.html"></a>
-          <div class="clear"></div>
-          <input id="more-projects" type="button" value="Plus de projets"
-            onclick="document.location.href='pages/projects.html';">
-        </div>
-      </div>
-    </div>
-    <!-- Contacts -->
-    <div id="contact">
-      <h1>Contact</h1>
-      <div id="contact-text">
-        <p>Pour toute question:</p>
-        <div id="social">
-          <div id="social-links">
-            <a title="GitHub" target="_blank" href="https://github.com/joshhauser"><img class="social-icons"
-                src="imgs/icons/github.png" alt="Logo de GitHub" /></a>
-            <a title="Mail" href="mailto:joshua.hauser@gmx.fr"><img class="social-icons" src="imgs/icons/email.png"
-                alt="Contact par mail" /></a>
-            <a title="LinkedIn" target="_blank" href="http://www.linkedin.com/in/joshua-hauser"><img
-                class="social-icons" src="imgs/icons/linkedin.png" alt="Logo de LinkedIn" /></a>
-          </div>
-        </div>
-      </div>
+    <div id="hero">
     </div>
   </div>
 </body>
-<footer>
+<!-- <footer>
   <p id="copyright"><a href="https://joshhauser.github.io" class="custom-link">&copy; Joshua Hauser</a></p>
   <div class="clear"></div>
-</footer>
-
+</footer> -->
 </html>
