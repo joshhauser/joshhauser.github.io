@@ -49,3 +49,28 @@ html {
     }
   }
 }
+
+#hero {
+  .name {
+    color: white;
+    font-family: 'Inconsolata Regular';
+    font-weight: bold;
+    font-size: 70pt;
+    letter-spacing: 0%;
+    display: flex;
+    gap: 15px;
+  }
+
+  .doubled-letter {
+    text-shadow: -4px -3px 0 white;
+
+    &.red {
+      color: #FF6969;
+    }
+
+    &.green {
+      color: #4DAF4B;
+
+    }
+  }
+}

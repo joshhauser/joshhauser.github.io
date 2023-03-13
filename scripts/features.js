@@ -17,12 +17,11 @@ document.onclick = function(event){
 function configMenu() {
   const menu = document.getElementById('menu');
   const menuItems = menu.childNodes
+  
   for (let i = 0; i < menuItems.length; i++) {
-    console.log(menuItems)
     menuItems[i].addEventListener('click', (e) => {
       const activeItem = menu.getElementsByClassName('active')[0];
       activeItem.classList.toggle('active');
-      console.log(e.target)
       e.target.classList.toggle('active');
     })
   } 

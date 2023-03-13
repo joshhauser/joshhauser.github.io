@@ -1,0 +1,14 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=flex.css.map */

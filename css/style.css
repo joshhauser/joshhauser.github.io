@@ -40,4 +40,23 @@ html {
   transition-duration: 500ms;
 }
 
+#hero .name {
+  color: white;
+  font-family: "Inconsolata Regular";
+  font-weight: bold;
+  font-size: 70pt;
+  letter-spacing: 0%;
+  display: flex;
+  gap: 15px;
+}
+#hero .doubled-letter {
+  text-shadow: -4px -3px 0 white;
+}
+#hero .doubled-letter.red {
+  color: #FF6969;
+}
+#hero .doubled-letter.green {
+  color: #4DAF4B;
+}
+
 /*# sourceMappingURL=style.css.map */
