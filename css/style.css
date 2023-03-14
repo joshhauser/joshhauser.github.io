@@ -40,23 +40,69 @@ html {
   transition-duration: 500ms;
 }
 
-#hero .name {
+#hero {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 90px);
+}
+#hero .content {
+  width: 80%;
+  height: 100%;
+}
+#hero .content .left {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15%;
+}
+#hero .content .left .name {
   color: white;
   font-family: "Inconsolata Regular";
   font-weight: bold;
-  font-size: 70pt;
+  font-size: 60pt;
   letter-spacing: 0%;
   display: flex;
-  gap: 15px;
 }
-#hero .doubled-letter {
+#hero .content .left .name .name-part {
+  display: flex;
+}
+#hero .content .left .name .name-part .doubled-letter {
   text-shadow: -4px -3px 0 white;
 }
-#hero .doubled-letter.red {
+#hero .content .left .name .name-part .doubled-letter.red {
   color: #FF6969;
+  margin-right: 5px;
 }
-#hero .doubled-letter.green {
+#hero .content .left .name .name-part .doubled-letter.green {
   color: #4DAF4B;
+  margin-right: 10px;
+}
+#hero .content .left .description {
+  color: white;
+  font-family: "Inconsolata Regular";
+  font-size: 20pt;
+}
+#hero .content .right {
+  margin-top: 10%;
+}
+#hero .content .right .macaron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .content .right .macaron.morph {
+  align-self: flex-end;
+  width: 267.32px;
+  height: 267.32px;
+  background: linear-gradient(180deg, #6D4242 0%, #AE6969 100%);
+  box-shadow: 0px 35.6425px 71.285px rgba(29, 18, 18, 0.401), inset 0px -14.7322px 14.7322px #643C3C, inset 0px 14.7322px 14.7322px #B76E6E;
+  border-radius: 100%;
+}
+#hero .content .right .macaron.morph:hover {
+  cursor: pointer;
+}
+#hero .content .right .macaron img {
+  height: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

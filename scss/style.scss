@@ -1,11 +1,12 @@
 $bg-color: #2A3661;
+$top-bar-size: 90px;
 
 html {
   background-color: $bg-color;
 }
 
 #topbar {
-  height: 90px;
+  height: $top-bar-size;
 
   #topbar-content {
     margin: 0 auto;
@@ -30,18 +31,18 @@ html {
 
         li {
           &[class~='active'] {
-            background: linear-gradient(160deg, rgba(126,126,126,0.7470588577227766) 0%, rgba(154, 154, 154, 0.671) 70%, rgba(223, 221, 221, 0.432) 100%);
+            background: linear-gradient(160deg, rgba(126, 126, 126, 0.7470588577227766) 0%, rgba(154, 154, 154, 0.671) 70%, rgba(223, 221, 221, 0.432) 100%);
             border: 1px solid rgba(255, 255, 255, 0.69);
             backdrop-filter: blur(12px);
             border-radius: 12px;
             padding: 1.5% 2.5%;
           }
-          
+
           &:hover {
             cursor: pointer;
           }
 
-          &:hover:not([class~='active']){
+          &:hover:not([class~='active']) {
             transition-duration: 500ms;
           }
         }
@@ -51,26 +52,79 @@ html {
 }
 
 #hero {
-  .name {
-    color: white;
-    font-family: 'Inconsolata Regular';
-    font-weight: bold;
-    font-size: 70pt;
-    letter-spacing: 0%;
-    display: flex;
-    gap: 15px;
-  }
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  height: calc(100% - $top-bar-size);
 
-  .doubled-letter {
-    text-shadow: -4px -3px 0 white;
+  .content {
+    width: 80%;
+    height: 100%;
 
-    &.red {
-      color: #FF6969;
+    .left {
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15%;
+
+      .name {
+        color: white;
+        font-family: 'Inconsolata Regular';
+        font-weight: bold;
+        font-size: 60pt;
+        letter-spacing: 0%;
+        display: flex;
+
+        .name-part {
+          display: flex;
+
+          .doubled-letter {
+            text-shadow: -4px -3px 0 white;
+
+            &.red {
+              color: #FF6969;
+              margin-right: 5px;
+            }
+
+            &.green {
+              color: #4DAF4B;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+
+      .description {
+        color: white;
+        font-family: 'Inconsolata Regular';
+        font-size: 20pt;
+      }
     }
 
-    &.green {
-      color: #4DAF4B;
+    .right {
+      margin-top: 10%;
 
+      .macaron {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.morph {
+          align-self: flex-end;
+          width: 267.32px;
+          height: 267.32px;
+          background: linear-gradient(180deg, #6D4242 0%, #AE6969 100%);
+          box-shadow: 2.18247e-15px 35.6425px 71.285px rgba(29, 18, 18, 0.401), inset -9.02089e-16px -14.7322px 14.7322px #643C3C, inset 9.02089e-16px 14.7322px 14.7322px #B76E6E;
+          border-radius: 100%;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        
+        img {
+          height: 60%;
+        }
+      }
     }
   }
 }
