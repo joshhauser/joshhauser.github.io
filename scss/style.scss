@@ -55,16 +55,15 @@ html {
   background-color: red;
   display: flex;
   justify-content: center;
-  height: calc(100% - $top-bar-size);
+  height: calc(100vh - $top-bar-size);
 
   .content {
-    width: 80%;
+    width: 70%;
     height: 100%;
 
     .left {
       display: flex;
-      justify-content: flex-end;
-      margin-bottom: 15%;
+      justify-content: center;
 
       .name {
         color: white;
@@ -101,7 +100,8 @@ html {
     }
 
     .right {
-      margin-top: 10%;
+      display: flex;
+      justify-content: center;
 
       .macaron {
         display: flex;
@@ -119,11 +119,32 @@ html {
           &:hover {
             cursor: pointer;
           }
+
+          img {
+            height: 60%;
+          }
         }
-        
-        img {
-          height: 60%;
-        }
+      }
+    }
+  }
+}
+
+.skills {
+  background-color: green;
+  height: 100vh;
+
+  .short {
+    background-color: pink;
+
+    .col {
+      height: 15%;
+      aspect-ratio: 1/1;
+
+      .skill-tile {
+        height: 100%;
+        width: 100%;
+        background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+        border-radius: 36px;
       }
     }
   }

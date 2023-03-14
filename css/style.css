@@ -44,16 +44,15 @@ html {
   background-color: red;
   display: flex;
   justify-content: center;
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
 }
 #hero .content {
-  width: 80%;
+  width: 70%;
   height: 100%;
 }
 #hero .content .left {
   display: flex;
-  justify-content: flex-end;
-  margin-bottom: 15%;
+  justify-content: center;
 }
 #hero .content .left .name {
   color: white;
@@ -83,7 +82,8 @@ html {
   font-size: 20pt;
 }
 #hero .content .right {
-  margin-top: 10%;
+  display: flex;
+  justify-content: center;
 }
 #hero .content .right .macaron {
   display: flex;
@@ -101,8 +101,26 @@ html {
 #hero .content .right .macaron.morph:hover {
   cursor: pointer;
 }
-#hero .content .right .macaron img {
+#hero .content .right .macaron.morph img {
   height: 60%;
+}
+
+.skills {
+  background-color: green;
+  height: 100vh;
+}
+.skills .short {
+  background-color: pink;
+}
+.skills .short .col {
+  height: 15%;
+  aspect-ratio: 1/1;
+}
+.skills .short .col .skill-tile {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border-radius: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */
