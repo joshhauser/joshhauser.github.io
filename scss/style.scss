@@ -1,7 +1,7 @@
 $bg-color: #2A3661;
 $top-bar-size: 90px;
 
-html > * {
+html>* {
   font-family: 'Inconsolata Regular';
   color: white;
 }
@@ -129,22 +129,32 @@ html {
 }
 
 .skills {
+  $title-padding-top: 1%;
+
   background-color: green;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 4em;
+    padding-top: $title-padding-top;
+    text-align: center;
+  }
 
   .short {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-grow: 1;
 
     .row {
-      height: 60%;
+      height: calc(100vh * 60/100);
       aspect-ratio: 1/1;
       $gapvalue: 20px;
       gap: $gapvalue;
 
-      > * {
+      >* {
         flex: 0 0 auto;
         width: calc(50% - $gapvalue/2);
       }
@@ -169,6 +179,8 @@ html {
             span {
               color: white;
               font-family: 'Inconsolata Regular';
+              text-align: center;
+              font-size: 1.5rem;
             }
           }
         }

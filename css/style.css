@@ -107,15 +107,22 @@ html {
 .skills {
   background-color: green;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.skills h1 {
+  font-size: 4em;
+  padding-top: 1%;
+  text-align: center;
 }
 .skills .short {
-  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 .skills .short .row {
-  height: 60%;
+  height: 60vh;
   aspect-ratio: 1/1;
   gap: 20px;
 }
@@ -141,6 +148,8 @@ html {
 .skills .short .row .col .skill-tile .col span {
   color: white;
   font-family: "Inconsolata Regular";
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
