@@ -115,6 +115,28 @@ html {
   padding-top: 1%;
   text-align: center;
 }
+.skills .menu {
+  margin-top: 1%;
+}
+.skills .menu ul {
+  display: flex;
+  gap: 50px;
+  font-size: 1.5em;
+  list-style: none;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.skills .menu ul li {
+  padding-bottom: 5px;
+}
+.skills .menu ul li.selected {
+  border-bottom: 5px solid white;
+}
+.skills .menu ul li:hover {
+  cursor: pointer;
+}
 .skills .short {
   display: flex;
   justify-content: center;

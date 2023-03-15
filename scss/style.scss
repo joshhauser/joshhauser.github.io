@@ -142,6 +142,33 @@ html {
     text-align: center;
   }
 
+  .menu {
+    margin-top: 1%;
+
+    ul {
+      display: flex;
+      gap: 50px;
+      font-size: 1.5em;
+      list-style: none;
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+
+      li {
+        padding-bottom: 5px;
+
+        &.selected {
+          border-bottom: 5px solid white;
+        }
+        
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
   .short {
     display: flex;
     justify-content: center;
