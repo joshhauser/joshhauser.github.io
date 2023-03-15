@@ -55,7 +55,7 @@ html {
 }
 
 #hero {
-  background-color: red;
+  //background-color: red;
   display: flex;
   justify-content: center;
   height: calc(100vh - $top-bar-size);
@@ -131,7 +131,7 @@ html {
 .skills {
   $title-padding-top: 1%;
 
-  background-color: green;
+  //background-color: green;
   height: 100vh;
   display: flex;
   flex-direction: column;
