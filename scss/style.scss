@@ -134,17 +134,33 @@ html {
   height: 100vh;
 
   .short {
-    background-color: pink;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .col {
-      height: 15%;
+    .row {
+      height: 60%;
       aspect-ratio: 1/1;
+      $gapvalue: 20px;
+      gap: $gapvalue;
 
-      .skill-tile {
-        height: 100%;
-        width: 100%;
-        background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
-        border-radius: 36px;
+      >* {
+        flex: 0 0 auto;
+        width: calc(50% - $gapvalue/2);
+      }
+
+      .col {
+        .skill-tile {
+          height: 100%;
+          width: 100%;
+          background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
+          border-radius: 36px;
+
+          img {
+            width: 70;
+          }
+        }
       }
     }
   }

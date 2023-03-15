@@ -110,17 +110,28 @@ html {
   height: 100vh;
 }
 .skills .short {
-  background-color: pink;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.skills .short .col {
-  height: 15%;
+.skills .short .row {
+  height: 60%;
   aspect-ratio: 1/1;
+  gap: 20px;
 }
-.skills .short .col .skill-tile {
+.skills .short .row > * {
+  flex: 0 0 auto;
+  width: calc(50% - 10px);
+}
+.skills .short .row .col .skill-tile {
   height: 100%;
   width: 100%;
   background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
   border-radius: 36px;
+}
+.skills .short .row .col .skill-tile img {
+  width: 70;
 }
 
 /*# sourceMappingURL=style.css.map */
