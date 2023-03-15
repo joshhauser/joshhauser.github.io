@@ -145,20 +145,32 @@ html {
       $gapvalue: 20px;
       gap: $gapvalue;
 
-      >* {
+      > * {
         flex: 0 0 auto;
         width: calc(50% - $gapvalue/2);
       }
 
       .col {
         .skill-tile {
-          height: 100%;
           width: 100%;
+          height: 100%;
           background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
           border-radius: 36px;
 
-          img {
-            width: 70;
+          .col {
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            gap: 5%;
+
+            .skill-badge {
+              width: 70%;
+            }
+
+            span {
+              color: white;
+              font-family: 'Inconsolata Regular';
+            }
           }
         }
       }

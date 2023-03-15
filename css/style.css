@@ -125,13 +125,23 @@ html {
   width: calc(50% - 10px);
 }
 .skills .short .row .col .skill-tile {
-  height: 100%;
   width: 100%;
+  height: 100%;
   background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
   border-radius: 36px;
 }
-.skills .short .row .col .skill-tile img {
-  width: 70;
+.skills .short .row .col .skill-tile .col {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 5%;
+}
+.skills .short .row .col .skill-tile .col .skill-badge {
+  width: 70%;
+}
+.skills .short .row .col .skill-tile .col span {
+  color: white;
+  font-family: "Inconsolata Regular";
 }
 
 /*# sourceMappingURL=style.css.map */
