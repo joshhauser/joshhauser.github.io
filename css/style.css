@@ -13,6 +13,20 @@ h1 {
   text-align: center;
 }
 
+.underlined {
+  display: inline-block;
+}
+.underlined .line {
+  border: 1px solid;
+  margin-top: -2%;
+}
+.underlined .line.red {
+  border-color: #FF6969;
+}
+.underlined .line.green {
+  border-color: #4DAF4B;
+}
+
 #topbar {
   height: 90px;
 }
