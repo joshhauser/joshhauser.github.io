@@ -15,16 +15,18 @@ document.onclick = function(event){
 } */
 
 function configMenu() {
-  const menu = document.getElementById('menu');
-  const menuItems = menu.childNodes
-  
-  for (let i = 0; i < menuItems.length; i++) {
-    menuItems[i].addEventListener('click', (e) => {
-      const activeItem = menu.getElementsByClassName('active')[0];
-      activeItem.classList.toggle('active');
-      e.target.classList.toggle('active');
-    })
-  } 
+  const menus = document.getElementsByClassName('menu');
+  for (let menu of menus) {
+    const items = menu.childNodes;
+    
+    for (let item of items) {
+      item.addEventListener('click', (e) => {
+        const activeItem = menu.getElementsByClassName('active')[0];
+        activeItem.classList.toggle('active');
+        e.target.classList.toggle('active');
+      })
+    }
+  }
 }
 
 window.onload = () => {

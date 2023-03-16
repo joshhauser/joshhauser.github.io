@@ -157,8 +157,9 @@ html {
 
       li {
         padding-bottom: 5px;
+        border-bottom: 5px solid transparent;
 
-        &.selected {
+        &.active {
           border-bottom: 5px solid white;
         }
         
@@ -169,12 +170,16 @@ html {
     }
   }
 
-  .short {
+
+  .short, .long {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    background-color: red;
+  }
 
+  .short {
     .row {
       height: calc(100vh * 60/100);
       aspect-ratio: 1/1;
@@ -207,10 +212,36 @@ html {
               color: white;
               font-family: 'Inconsolata Regular';
               text-align: center;
-              font-size: 1.5rem;
             }
           }
         }
+      }
+    }
+  }
+}
+
+.long {
+  > .row {
+    width: 50%;
+    
+    .left, .right {
+      gap: 20px;
+    }
+  }
+  
+  .skills-block {
+    flex-grow: 0;
+    
+    .skills-category {
+      font-size: 1.8rem;
+    }
+
+    .skills-list {
+      margin-left: 8%;
+      flex-shrink: inherit;
+
+      .skill {
+        font-size: 1.2rem;
       }
     }
   }

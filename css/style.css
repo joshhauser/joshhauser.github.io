@@ -128,18 +128,20 @@ html {
 }
 .skills .menu ul li {
   padding-bottom: 5px;
+  border-bottom: 5px solid transparent;
 }
-.skills .menu ul li.selected {
+.skills .menu ul li.active {
   border-bottom: 5px solid white;
 }
 .skills .menu ul li:hover {
   cursor: pointer;
 }
-.skills .short {
+.skills .short, .skills .long {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  background-color: red;
 }
 .skills .short .row {
   height: 60vh;
@@ -169,7 +171,26 @@ html {
   color: white;
   font-family: "Inconsolata Regular";
   text-align: center;
-  font-size: 1.5rem;
+}
+
+.long > .row {
+  width: 50%;
+}
+.long > .row .left, .long > .row .right {
+  gap: 20px;
+}
+.long .skills-block {
+  flex-grow: 0;
+}
+.long .skills-block .skills-category {
+  font-size: 1.8rem;
+}
+.long .skills-block .skills-list {
+  margin-left: 8%;
+  flex-shrink: inherit;
+}
+.long .skills-block .skills-list .skill {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
