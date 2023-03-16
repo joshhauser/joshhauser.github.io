@@ -128,10 +128,14 @@ h1 {
       display: flex;
       justify-content: center;
 
+      span {
+        font-family: 'Gloria Hallelujah Regular';
+        font-size: 1.2rem;
+        width: max-content;
+      }
+
       .macaron {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        perspective: 1000px;
 
         &.morph {
           align-self: flex-end;
@@ -141,8 +145,42 @@ h1 {
           box-shadow: 2.18247e-15px 35.6425px 71.285px rgba(29, 18, 18, 0.401), inset -9.02089e-16px -14.7322px 14.7322px #643C3C, inset 9.02089e-16px 14.7322px 14.7322px #B76E6E;
           border-radius: 100%;
 
+          .inner {
+            height: 100%;
+            width: 100%;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            position: relative;
+
+          }
+
           &:hover {
             cursor: pointer;
+
+            .inner {
+              transform: rotateY(180deg);
+            }
+          }
+
+          .front,
+          .back {
+            -webkit-backface-visibility: hidden;
+            /* Safari */
+            backface-visibility: hidden;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+          }
+
+          .back {
+            transform: rotateY(180deg);
+
+            img {
+              border-radius: 100%;
+            }
           }
 
           img {
