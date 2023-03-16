@@ -172,11 +172,20 @@ html {
 
 
   .short, .long {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    background-color: red;
+    display: none;
+
+    &.active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      animation: fadeIn 1s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
   }
 
   .short {
@@ -223,6 +232,7 @@ html {
 .long {
   > .row {
     width: 50%;
+    height: calc(100vh * 60/100);
     
     .left, .right {
       gap: 20px;

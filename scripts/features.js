@@ -14,6 +14,9 @@ document.onclick = function(event){
   }
 } */
 
+/* Global variables */
+let selectedSkillsPane = 'short';
+
 function configMenu() {
   const menus = document.getElementsByClassName('menu');
   for (let menu of menus) {
@@ -27,6 +30,17 @@ function configMenu() {
       })
     }
   }
+}
+
+function changeSkillsPane(selected) {
+  if (selected === selectedSkillsPane) return;
+  selectedSkillsPane = selected;
+
+  const shortPane = document.getElementsByClassName('short')[0];
+  const detailedPane = document.getElementsByClassName('long')[0];
+
+  shortPane.classList.toggle('active');
+  detailedPane.classList.toggle('active');
 }
 
 window.onload = () => {

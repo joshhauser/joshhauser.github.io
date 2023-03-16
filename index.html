@@ -66,11 +66,11 @@
     <h1>Compétences</h1>
     <nav class="menu">
       <ul class="menu-items">
-        <li class="active">En bref</li>
-        <li>En détails</li>
+        <li class="active" onclick="changeSkillsPane('short')">En bref</li>
+        <li onclick="changeSkillsPane('long')">En détails</li>
       </ul>
     </nav>
-    <!-- <div class="short">
+    <div class="short active">
       <div class="row">
         <div class="col">
           <div class="skill-tile">
@@ -105,11 +105,11 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="long">
       <div class="row">
         <div class="col left">
-          <div class="col skills-block">
+          <div class="row skills-block">
             <div class="row skills-category">
               Langages
             </div>
@@ -121,7 +121,7 @@
               </ul>
             </div>
           </div>
-          <div class="col skills-block">
+          <div class="row skills-block">
             <div class="row skills-category">
               Bases de données
             </div>
@@ -133,7 +133,7 @@
               </ul>
             </div>
           </div>
-          <div class="col skills-block">
+          <div class="row skills-block">
             <div class="row skills-category">
               Outils divers
             </div>
@@ -149,7 +149,7 @@
           </div>
         </div>
         <div class="col right">
-          <div class="col skills-block">
+          <div class="row skills-block">
             <div class="row skills-category">
               Outils de développement
             </div>
@@ -160,7 +160,7 @@
               </ul>
             </div>
           </div>
-          <div class="col skills-block">
+          <div class="row skills-block">
             <div class="row skills-category">
               Systèmes d'exploitation
             </div>
