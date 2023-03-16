@@ -14,10 +14,15 @@ document.onclick = function(event){
   }
 } */
 
-/* Global variables */
+/* Global variables & consts */
 let selectedSkillsPane = 'short';
+const shortPane = document.getElementsByClassName('short')[0];
+const detailedPane = document.getElementsByClassName('long')[0];
 
-function configMenu() {
+/**
+ * Configure menus
+ */
+function configMenus() {
   const menus = document.getElementsByClassName('menu');
   for (let menu of menus) {
     const items = menu.childNodes;
@@ -32,17 +37,18 @@ function configMenu() {
   }
 }
 
+/**
+ * Change selected skill pane
+ * @param {String} selected the selected skill pane
+ * @returns 
+ */
 function changeSkillsPane(selected) {
   if (selected === selectedSkillsPane) return;
   selectedSkillsPane = selected;
-
-  const shortPane = document.getElementsByClassName('short')[0];
-  const detailedPane = document.getElementsByClassName('long')[0];
-
   shortPane.classList.toggle('active');
   detailedPane.classList.toggle('active');
 }
 
 window.onload = () => {
-  configMenu();
+  configMenus();
 }
