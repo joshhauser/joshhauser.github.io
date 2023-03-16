@@ -7,6 +7,12 @@ html {
   background-color: #2A3661;
 }
 
+h1 {
+  font-size: 4em;
+  padding-top: 1%;
+  text-align: center;
+}
+
 #topbar {
   height: 90px;
 }
@@ -108,11 +114,6 @@ html {
   display: flex;
   flex-direction: column;
 }
-.skills h1 {
-  font-size: 4em;
-  padding-top: 1%;
-  text-align: center;
-}
 .skills .menu {
   margin-top: 1%;
 }
@@ -136,10 +137,12 @@ html {
 .skills .menu ul li:hover {
   cursor: pointer;
 }
-.skills .short, .skills .long {
+.skills .short,
+.skills .long {
   display: none;
 }
-.skills .short.active, .skills .long.active {
+.skills .short.active,
+.skills .long.active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,31 +157,31 @@ html {
     opacity: 1;
   }
 }
-.skills .short .row {
+.skills .short > .row {
   height: 60vh;
   aspect-ratio: 1/1;
   gap: 20px;
 }
-.skills .short .row > * {
+.skills .short > .row > * {
   flex: 0 0 auto;
   width: calc(50% - 10px);
 }
-.skills .short .row .col .skill-tile {
+.skills .short > .row .col .skill-tile {
   width: 100%;
   height: 100%;
   background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
   border-radius: 36px;
 }
-.skills .short .row .col .skill-tile .col {
+.skills .short > .row .col .skill-tile .col {
   align-items: center;
   justify-content: center;
   height: 100%;
   gap: 5%;
 }
-.skills .short .row .col .skill-tile .col .skill-badge {
+.skills .short > .row .col .skill-tile .col .skill-badge {
   width: 70%;
 }
-.skills .short .row .col .skill-tile .col span {
+.skills .short > .row .col .skill-tile .col span {
   color: white;
   font-family: "Inconsolata Regular";
   text-align: center;
@@ -188,7 +191,8 @@ html {
   width: 50%;
   height: 60vh;
 }
-.long > .row .left, .long > .row .right {
+.long > .row .left,
+.long > .row .right {
   gap: 20px;
 }
 .long .skills-block {
@@ -203,6 +207,73 @@ html {
 }
 .long .skills-block .skills-list .skill {
   font-size: 1.2rem;
+}
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.projects > .row {
+  aspect-ratio: 1/1;
+  gap: 20px;
+  flex-grow: 1;
+}
+.projects > .row > .col {
+  gap: 20px;
+  justify-content: center;
+  padding: 2% 0;
+  align-items: center;
+}
+.projects > .row > .col .row {
+  gap: 20px;
+  width: 60%;
+  height: 50%;
+}
+.projects > .row > .col .row .project-tile {
+  background-color: yellow;
+  border-radius: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 90px);
+}
+.contact .row {
+  width: 70%;
+}
+.contact .row .left,
+.contact .row .right {
+  justify-content: center;
+  align-items: center;
+}
+.contact .row .left p {
+  font-size: 1.5rem;
+}
+.contact .row .right .macaron {
+  width: 266px;
+  height: 266px;
+  border-radius: 100%;
+  background-color: #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .row .right .macaron img {
+  height: 65%;
+}
+
+.foot {
+  height: 90px;
+  background-color: #232C4E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot p {
+  width: max-content;
+  font-size: 1.3;
 }
 
 /*# sourceMappingURL=style.css.map */
