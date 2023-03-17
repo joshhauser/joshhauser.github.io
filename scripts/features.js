@@ -16,8 +16,7 @@ document.onclick = function(event){
 
 /* Global variables & consts */
 let selectedSkillsPane = 'short';
-const shortPane = document.getElementsByClassName('short')[0];
-const detailedPane = document.getElementsByClassName('long')[0];
+
 
 /**
  * Configure menus
@@ -26,7 +25,7 @@ function configMenus() {
   const menus = document.getElementsByClassName('menu');
   for (let menu of menus) {
     const items = menu.childNodes;
-    
+
     for (let item of items) {
       item.addEventListener('click', (e) => {
         const activeItem = menu.getElementsByClassName('active')[0];
@@ -43,12 +42,32 @@ function configMenus() {
  * @returns 
  */
 function changeSkillsPane(selected) {
+  const shortPane = document.getElementsByClassName('short')[0];
+  const detailedPane = document.getElementsByClassName('long')[0];
   if (selected === selectedSkillsPane) return;
   selectedSkillsPane = selected;
   shortPane.classList.toggle('active');
   detailedPane.classList.toggle('active');
 }
 
+
+
 window.onload = () => {
   configMenus();
+
+  const keys = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+  let n = 0;
+
+  $(document).keydown((e) => {
+    if (e.keyCode === keys[n++]) {
+      if (n === keys.length) {
+        console.log('joker')
+        n = 0;
+        return false;
+      }
+    }
+    else {
+      n = 0;
+    }
+  })
 }

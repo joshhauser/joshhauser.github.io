@@ -108,8 +108,15 @@ h1 {
   font-size: 1.2rem;
   width: max-content;
 }
+#hero .content .right .arrow {
+  height: 60px;
+  width: max-content;
+  margin-top: 5%;
+  margin-left: 5%;
+}
 #hero .content .right .macaron {
   perspective: 1000px;
+  margin-top: 10%;
 }
 #hero .content .right .macaron.morph {
   align-self: flex-end;
@@ -154,15 +161,15 @@ h1 {
   height: 60%;
 }
 
-.skills {
+#skills {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.skills .menu {
+#skills .menu {
   margin-top: 1%;
 }
-.skills .menu ul {
+#skills .menu ul {
   display: flex;
   gap: 50px;
   font-size: 1.5em;
@@ -172,22 +179,22 @@ h1 {
   margin-right: auto;
   align-items: center;
 }
-.skills .menu ul li {
+#skills .menu ul li {
   padding-bottom: 5px;
   border-bottom: 5px solid transparent;
 }
-.skills .menu ul li.active {
+#skills .menu ul li.active {
   border-bottom: 5px solid white;
 }
-.skills .menu ul li:hover {
+#skills .menu ul li:hover {
   cursor: pointer;
 }
-.skills .short,
-.skills .long {
+#skills .short,
+#skills .long {
   display: none;
 }
-.skills .short.active,
-.skills .long.active {
+#skills .short.active,
+#skills .long.active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -202,31 +209,31 @@ h1 {
     opacity: 1;
   }
 }
-.skills .short > .row {
+#skills .short > .row {
   height: 60vh;
   aspect-ratio: 1/1;
   gap: 20px;
 }
-.skills .short > .row > * {
+#skills .short > .row > * {
   flex: 0 0 auto;
   width: calc(50% - 10px);
 }
-.skills .short > .row .col .skill-tile {
+#skills .short > .row .col .skill-tile {
   width: 100%;
   height: 100%;
   background: radial-gradient(120.77% 306.01% at -2.31% 0%, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 100%);
   border-radius: 36px;
 }
-.skills .short > .row .col .skill-tile .col {
+#skills .short > .row .col .skill-tile .col {
   align-items: center;
   justify-content: center;
   height: 100%;
   gap: 5%;
 }
-.skills .short > .row .col .skill-tile .col .skill-badge {
+#skills .short > .row .col .skill-tile .col .skill-badge {
   width: 70%;
 }
-.skills .short > .row .col .skill-tile .col span {
+#skills .short > .row .col .skill-tile .col span {
   color: white;
   font-family: "Inconsolata Regular";
   text-align: center;
@@ -254,49 +261,49 @@ h1 {
   font-size: 1.2rem;
 }
 
-.projects {
+#projects {
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.projects > .row {
+#projects > .row {
   aspect-ratio: 1/1;
   gap: 20px;
   flex-grow: 1;
 }
-.projects > .row > .col {
+#projects > .row > .col {
   gap: 20px;
   justify-content: center;
   padding: 2% 0;
   align-items: center;
 }
-.projects > .row > .col .row {
+#projects > .row > .col .row {
   gap: 20px;
   width: 60%;
   height: 50%;
 }
-.projects > .row > .col .row .project-tile {
+#projects > .row > .col .row .project-tile {
   background-color: yellow;
   border-radius: 20px;
 }
 
-.contact {
+#contact {
   display: flex;
   justify-content: center;
   height: calc(100vh - 90px);
 }
-.contact .row {
+#contact .row {
   width: 70%;
 }
-.contact .row .left,
-.contact .row .right {
+#contact .row .left,
+#contact .row .right {
   justify-content: center;
   align-items: center;
 }
-.contact .row .left p {
+#contact .row .left p {
   font-size: 1.5rem;
 }
-.contact .row .right .macaron {
+#contact .row .right .macaron {
   width: 266px;
   height: 266px;
   border-radius: 100%;
@@ -305,20 +312,35 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-.contact .row .right .macaron img {
+#contact .row .right .macaron img {
   height: 65%;
 }
 
-.foot {
+#foot {
   height: 90px;
   background-color: #232C4E;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.foot p {
+#foot p {
   width: max-content;
   font-size: 1.3;
+}
+
+@media screen and (max-width: 750px) {
+  #topbar {
+    display: none;
+  }
+  #hero, #skills, #projects {
+    height: auto;
+    gap: 15px;
+  }
+  body {
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
