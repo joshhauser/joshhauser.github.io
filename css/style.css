@@ -139,10 +139,12 @@ h1 {
 #hero .content .right .macaron.morph:hover .inner {
   transform: rotateY(180deg);
 }
+#hero .content .right .macaron.morph:hover .inner .front img {
+  display: none !important;
+}
 #hero .content .right .macaron.morph .front,
 #hero .content .right .macaron.morph .back {
   -webkit-backface-visibility: hidden;
-  /* Safari */
   backface-visibility: hidden;
   height: 100%;
   width: 100%;
@@ -328,12 +330,14 @@ h1 {
   font-size: 1.3;
 }
 
-@media screen and (max-width: 750px) {
+@media (max-width: 750px) {
   #topbar {
     display: none;
   }
+  #hero {
+    height: 100vh;
+  }
   #hero, #skills, #projects {
-    height: auto;
     gap: 15px;
   }
   body {

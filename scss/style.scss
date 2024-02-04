@@ -159,7 +159,6 @@ h1 {
             transition: transform 0.8s;
             transform-style: preserve-3d;
             position: relative;
-
           }
 
           &:hover {
@@ -167,13 +166,16 @@ h1 {
 
             .inner {
               transform: rotateY(180deg);
+
+              .front img {
+                display: none !important;
+              }
             }
           }
 
           .front,
           .back {
             -webkit-backface-visibility: hidden;
-            /* Safari */
             backface-visibility: hidden;
             height: 100%;
             width: 100%;
@@ -413,13 +415,17 @@ h1 {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media(max-width: 750px) {
   #topbar {
     display: none;
   }
 
+  #hero {
+    height: 100vh;
+
+  }
+
   #hero, #skills, #projects {
-    height: auto;
     gap: 15px;
   }
 
