@@ -11,6 +11,10 @@ body{
 }
 
 /* HEADER */
+ 
+#pdf-header {
+  display: none;
+}
 
 #header{
   background-image: url("../imgs/headers/header1.png");
@@ -94,58 +98,15 @@ body{
 }
 
 /* SKILLS */
-
-/* #skills{
-  border-top: 3px solid rgb(90, 89, 89);
-  background-color:  white;
-  top: 0;
-  left:0;
-  right:0;
-  padding-top: 5%;
-  padding-bottom: 10%;
-} */
-
 #skills h1{
   margin: 0;
   font-family: "Montserrat Semi-Bold";
   font-size: 4em;
   text-align: center;
 }
-/*
-#skills h2{
-  font-family: "Montserrat Semi-Bold";
-  margin-top: 3%;
-  margin-bottom: 0;
-  margin-left: 3%;
-}
 
-#skills ul{
-  list-style-type: none;
-  margin-top: 2%;
-}
-
-.skills{
-  display: flex;
-  margin-bottom: -2%;
-}
-
-.skills li{
-  margin-left: 50px;
-  float: left;
-  font-family: "Montserrat Medium";
-  font-size: 16px;
-  text-align: center;
-  height: 120px;
-}
-
-#skills img{
-  width: 64px;
-  height: 64px;
-}
- */
 
 /* PROJECTS */
-
 #projects{
   border-top: 3px solid rgb(90, 90, 90);
   background-color: rgb(22, 22, 22);
@@ -318,29 +279,6 @@ body{
     float: none;
   }
   
-  /* #skills h2{
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 5%;
-  }
-
-  .skills ul{
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding:0;
-  }
-
-  .skills li{
-    min-height: 60%;
-    margin-left: 5%;
-    word-wrap: break-word;  
-    width: 20%;
-  }
-
-  .skills li:nth-child(4n+1){
-    margin-left: 0 !important;
-  } */
 }
 
 
@@ -352,22 +290,46 @@ body{
   #header h2{
     font-size: 1.5em;
   } 
+}
 
-  /* .skills ul{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding:0;
+@media print {
+  #topbar, #header, #introduction, #projects, #contact, footer {
+    display: none;
+  }
+  
+  #pdf-header {
+    display: block;
   }
 
-  .skills li{
-    min-height: unset;
-    margin-left: 0;
-    word-wrap: break-word;  
-    width: 33.33%;
+  #pdf-header-title {
+    font-size: 20pt;
   }
 
-  .skills li:nth-child(3n+1){
-    margin-left: 0 !important;
-  } */
+  #pdf-header-job {
+    margin-top: -3%;
+  }
+
+  #pdf-header-email {
+    margin-top: -2%;
+  }
+
+  #skills {
+    h1 {
+      font-size: 16pt;
+      text-align: left;
+       margin-bottom: -2%;
+    }
+
+    h2 {
+      font-size: 14pt;
+    }
+
+    h3 {
+      font-size: 12pt;
+    }
+
+    .emoji {
+      display: none;
+    }
+  }
 }
