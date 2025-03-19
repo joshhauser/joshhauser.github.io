@@ -17,6 +17,7 @@
         :label="item.label"
         :icon="item.icon"
         :icon-color="item.iconColor"
+        :link="item.link"
       />
     </li>
   </ul>

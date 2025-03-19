@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import type { MenuItem } from '@/models/menu-item.model';
   import TopbarMenu from './TopbarMenu.vue';
-  import { onMounted } from 'vue';
 
   const iconColor: string = 'white';
 
@@ -10,11 +9,13 @@
       label: 'Accueil',
       icon: 'Home',
       iconColor: iconColor,
+      link: '#hero',
     },
     {
       label: 'Présentation',
       icon: 'CircleUser',
       iconColor: iconColor,
+      link: '#presentation',
     },
     {
       label: 'Projets',
@@ -43,13 +44,15 @@
 </template>
 
 <style lang="scss" scoped>
+  @use '@/assets/styles/scss/variables' as vars;
+
   .topbar {
     position: fixed;
     background-color: rgb(22, 22, 22);
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: vars.$topbar-height;
     z-index: 1;
     box-shadow: 0px 2px 2px rgb(37, 37, 37);
 
