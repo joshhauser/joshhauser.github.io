@@ -5,4 +5,11 @@ body,
 #app {
   overflow: hidden;
   color: white;
+  user-select: none;
+
+  #typewriter {
+    .typed-skill {
+      color: rgb(219, 52, 52) !important;
+    }
+  }
 }

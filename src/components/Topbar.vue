@@ -21,6 +21,7 @@
       label: 'Projets',
       icon: 'Code',
       iconColor: iconColor,
+      link: '#projects',
     },
     {
       label: 'Contact',

@@ -4,34 +4,22 @@
 
   let typed;
   let typewriter;
-  /* const techs = [
-    'Java',
-    'Spring Boot',
-    'Python',
-    'Flask',
-    'FastAPI',
-    'Django',
-    'JavaScript',
-    'NodeJS',
-    'Angular',
-    'Vue',
-  ]; */
-  const techs = ['Java'];
+  const techs = ['Java', 'Python', 'JavaScript', 'NodeJS'];
 
   onMounted(() => {
     typed = document.getElementById('typewriter');
 
     typewriter = new Typewriter(typed, {
       delay: 100,
+      loop: true,
     });
 
     for (const tech of techs) {
-      /* typewriter
+      typewriter
         .typeString(`<b class="typed-skill">${tech}</b>`)
         .pauseFor(1000)
         .deleteAll()
-        .start(); */
-      typewriter.typeString(`<span id="typed-skill">${tech}</span>`).start();
+        .start();
     }
   });
 </script>
@@ -61,13 +49,6 @@
 
     .typewriting {
       font-size: 18pt;
-
-      #typewriter {
-        #typed-skill {
-          font-size: 49pt !important;
-          color: rgb(219, 52, 52) !important;
-        }
-      }
     }
   }
 </style>
