@@ -1,16 +1,18 @@
 <template>
   <div id="presentation" class="presentation flex justify-center items-center">
     <div
-      class="presentation-content flex flex-col items-center lg:w-4/5 md:w-full justify-center"
+      class="presentation-content flex flex-col items-center w-full lg:w-4/5 h-full sm:h-[90%] justify-center"
     >
-      <div class="presentation-title text-7xl font-bold text-center my-4">
-        ACCRO À LA <br /><span class="highlighted">TECHNOLOGIE</span>
+      <div
+        class="presentation-title text-5xl md:text-7xl w-full font-bold text-center my-4 text-pretty"
+      >
+        ACCRO À LA <span class="highlighted">TECHNOLOGIE</span>
       </div>
-      <div class="presentation-catchphrase text-center text-xl w-xl mb-8">
+      <div class="presentation-catchphrase text-center text-xl w-full mb-8">
         J'aime apprendre, et aller toujours plus loin pour concrétiser vos idées
         avec mon clavier.
       </div>
-      <div class="presentation-stats grid grid-cols-3 gap-[8vw]">
+      <div class="presentation-stats grid sm:grid-cols-3 gap-[8vw]">
         <div class="presentation-stat text-center">
           <p class="presentation-stat-number text-6xl font-bold">4</p>
           <p class="presentation-stat-label text-lg font-semibold">
@@ -45,7 +47,6 @@
     height: 100%;
 
     &-content {
-      height: 90%;
       background-color: #3a3a3a;
       border-radius: 25px;
     }

@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import Carousel from '@/components/Carousel.vue';
   import ProjectPreview from '@/components/ProjectPreview.vue';
+  import { onMounted, ref, watch } from 'vue';
 
   const project: any = {
     title: 'Projet',
@@ -10,14 +11,63 @@
       "Un exemple de projet décrit de manière beaucoup plus longue mais simplement pour avoir un truc à tester parce que je veux quelque chose de mieux qu'un Lorem Ipsum",
     techs: ['Vue', 'Python', 'FastAPI'],
   };
+
+  const projects = [project, project, project];
+  const slides = ref<Array<any[]>>([]);
+  const viewportWidth = ref<number>(0);
+
+  const setupSlides = (elementPerSlide: number = 3) => {
+    slides.value = [];
+    let slide = [];
+
+    for (const index in projects) {
+      const element = projects[index];
+
+      if (slide.length < elementPerSlide) {
+        slide.push(element);
+      } else {
+        slides.value.push(slide);
+        slide = [element];
+      }
+    }
+
+    slides.value.push(slide);
+  };
+
+  const onWindowResize = (event: any) => {
+    viewportWidth.value = window.innerWidth;
+  };
+
+  watch(viewportWidth, () => {
+    console.log(viewportWidth.value);
+    if (viewportWidth.value > 1430) {
+      setupSlides(3);
+    } else if (viewportWidth.value < 1430 && viewportWidth.value > 950) {
+      setupSlides(2);
+    } else {
+      setupSlides(1);
+    }
+  });
+
+  onMounted(() => {
+    setupSlides();
+    viewportWidth.value = window.innerWidth;
+    window.addEventListener('resize', onWindowResize);
+  });
 </script>
 
 <template>
   <div id="projects" class="pt-5 flex flex-col">
     <h1 class="text-center text-5xl font-bold">Projets</h1>
-    <Carousel :carousel-elements="[project, project, project, project]">
+    <Carousel :carousel-elements="slides" class="bg-red-500">
       <template #slideContent="slotProps">
-        <ProjectPreview :project="slotProps.carouselElement" />
+        <div class="w-full flex justify-around bg-black flex-wrap">
+          <ProjectPreview
+            v-for="project of slotProps.carouselElement"
+            :project="project"
+            class="md:bg-orange-300"
+          />
+        </div>
       </template>
     </Carousel>
   </div>

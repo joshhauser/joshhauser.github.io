@@ -10,12 +10,11 @@
 </script>
 
 <template>
-  <div class="project-preview card bg-base-100 w-85 shadow-sm">
+  <div class="project-preview card bg-base-100 w-full md:w-85 shadow-sm">
     <figure>
       <img
         :src="props.project.thumbnailSource"
         :alt="props.project.title + ' thumbnail'"
-        height="100px"
       />
     </figure>
     <div class="card-body p-4">
@@ -25,10 +24,9 @@
           v-for="tech in props.project.techs"
           :label="tech"
           :icon="'Candy'"
-        ></Chip>
+        />
       </div>
       <div class="divider m-0"></div>
-
       <p>
         {{ props.project.shortDescription }}
       </p>

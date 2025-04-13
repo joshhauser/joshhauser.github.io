@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { ref, type PropType } from 'vue';
+  import { onMounted, ref, type PropType } from 'vue';
 
   const props = defineProps({
     carouselElements: {
@@ -14,7 +14,7 @@
 
 <template>
   <div class="carousel-container flex justify-center items-center">
-    <div class="w-3/4 carousel">
+    <div class="w-3/4 h-[80%] md:h-fit carousel">
       <template v-for="(element, index) in props.carouselElements">
         <div :id="'slide' + index" class="relative w-full carousel-item">
           <slot name="slideContent" :carouselElement="element"></slot>
