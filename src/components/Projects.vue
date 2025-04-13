@@ -59,13 +59,12 @@
 <template>
   <div id="projects" class="pt-5 flex flex-col">
     <h1 class="text-center text-5xl font-bold">Projets</h1>
-    <Carousel :carousel-elements="slides" class="bg-red-500">
+    <Carousel :carousel-elements="slides">
       <template #slideContent="slotProps">
-        <div class="w-full flex justify-around bg-black flex-wrap">
+        <div class="w-full flex justify-around flex-wrap">
           <ProjectPreview
             v-for="project of slotProps.carouselElement"
             :project="project"
-            class="md:bg-orange-300"
           />
         </div>
       </template>
