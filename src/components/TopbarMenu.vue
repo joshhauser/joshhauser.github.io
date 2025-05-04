@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import type { PropType } from 'vue';
-  import { MenuItem } from '@/models/menu-item.model';
+  import type { MenuItem } from '@/models/menu-item.model';
   import TopbarButton from './TopbarButton.vue';
 
   const props = defineProps({

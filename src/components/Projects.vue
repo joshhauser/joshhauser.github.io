@@ -12,9 +12,18 @@
     techs: ['Vue', 'Python', 'FastAPI'],
   };
 
-  const projects = [project, project, project];
+  const projects = [
+    project,
+    project,
+    project,
+    project,
+    project,
+    project,
+    project,
+  ];
   const slides = ref<Array<any[]>>([]);
   const viewportWidth = ref<number>(0);
+  let elementsPerSlide: number = 3;
 
   const setupSlides = (elementPerSlide: number = 3) => {
     slides.value = [];
@@ -39,13 +48,19 @@
   };
 
   watch(viewportWidth, () => {
-    console.log(viewportWidth.value);
+    let _elementsPerSlide = elementsPerSlide;
+
     if (viewportWidth.value > 1430) {
-      setupSlides(3);
+      _elementsPerSlide = 3;
     } else if (viewportWidth.value < 1430 && viewportWidth.value > 950) {
-      setupSlides(2);
+      _elementsPerSlide = 2;
     } else {
-      setupSlides(1);
+      _elementsPerSlide = 1;
+    }
+
+    if (_elementsPerSlide != elementsPerSlide) {
+      elementsPerSlide = _elementsPerSlide;
+      setupSlides(_elementsPerSlide);
     }
   });
 
@@ -58,8 +73,8 @@
 
 <template>
   <div id="projects" class="pt-5 flex flex-col">
-    <h1 class="text-center text-5xl font-bold">Projets</h1>
-    <Carousel :carousel-elements="slides">
+    <h1 class="text-center text-5xl font-bold">Projets personnels</h1>
+    <Carousel :carousel-elements="slides" :show-buttons="elementsPerSlide > 1">
       <template #slideContent="slotProps">
         <div class="w-full flex justify-around flex-wrap">
           <ProjectPreview

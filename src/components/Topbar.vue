@@ -23,11 +23,6 @@
       iconColor: iconColor,
       link: '#projects',
     },
-    {
-      label: 'Contact',
-      icon: 'SendHorizontal',
-      iconColor: iconColor,
-    },
   ];
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <div id="presentation" class="presentation flex justify-center items-center">
     <div
-      class="presentation-content flex flex-col items-center w-full lg:w-4/5 h-full sm:h-[90%] justify-center"
+      class="presentation-content flex flex-col items-center w-full lg:w-4/5 h-full lg:h-[90%] justify-center lg:rounded-3xl"
     >
       <div
         class="presentation-title text-5xl md:text-7xl w-full font-bold text-center my-4 text-pretty"
@@ -48,7 +48,6 @@
 
     &-content {
       background-color: #3a3a3a;
-      border-radius: 25px;
     }
 
     &-title {
