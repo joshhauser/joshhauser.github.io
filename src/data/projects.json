@@ -1,5 +1,16 @@
-{
-    "project1": {
-        
-    }
-}
+[{
+    "title": "SGF",
+    "thumbnailPath": "/imgs/thumbnails/sgf.png",
+    "shortDescription": "Projet d'école : système de gestion de fichiers",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. Morbi elementum massa et nibh pellentesque scelerisque. Nulla sagittis sollicitudin mauris. Quisque ultrices imperdiet orci quis interdum. Nulla egestas feugiat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. Morbi elementum massa et nibh pellentesque scelerisque. Nulla sagittis sollicitudin mauris. Quisque ultrices imperdiet orci quis interdum. Nulla egestas feugiat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. Morbi elementum massa et nibh pellentesque scelerisque. Nulla sagittis sollicitudin mauris. Quisque ultrices imperdiet orci quis interdum. Nulla egestas feugiat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. Morbi elementum massa et nibh pellentesque scelerisque. Nulla sagittis sollicitudin mauris. Quisque ultrices imperdiet orci quis interdum. Nulla egestas feugiat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. Morbi elementum massa et nibh pellentesque scelerisque. Nulla sagittis sollicitudin mauris. Quisque ultrices imperdiet orci quis interdum. Nulla egestas feugiat scelerisque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quam ante, egestas id dui vitae, mattis sagittis erat. Fusce nec quam sit amet urna eleifend pharetra euismod sit amet nunc. Fusce ac massa euismod, cursus metus a, auctor quam. Praesent convallis ante et elit dapibus volutpat. In feugiat augue vitae elit feugiat faucibus. ",
+    "resources": ["Langage C", "Makefile", "Github"],
+    "techs": ["C"],
+    "gallery": [
+        "/imgs/sgf/cat.png",
+        "/imgs/sgf/test_cmd.png",
+        "/imgs/sgf/cd.png",
+        "/imgs/sgf/echo.png",
+        "/imgs/sgf/home.png",
+        "/imgs/sgf/rm_error.png"
+    ]
+}]

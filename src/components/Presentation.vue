@@ -13,6 +13,7 @@
         avec mon clavier.
       </div>
       <div class="presentation-stats grid sm:grid-cols-3 gap-[8vw]">
+        <!-- TODO: replace with Stat component from DaisyUI -->
         <div class="presentation-stat text-center">
           <p class="presentation-stat-number text-6xl font-bold">4</p>
           <p class="presentation-stat-label text-lg font-semibold">

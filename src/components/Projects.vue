@@ -2,6 +2,7 @@
   import Carousel from '@/components/Carousel.vue';
   import ProjectPreview from '@/components/ProjectPreview.vue';
   import { onMounted, ref, watch } from 'vue';
+  import projectsData from '@/data/projects.json';
 
   const project: any = {
     title: 'Projet',
@@ -12,7 +13,9 @@
     techs: ['Vue', 'Python', 'FastAPI'],
   };
 
-  const projects = [
+  const projects: any[] = [];
+
+  /* const projects = [
     project,
     project,
     project,
@@ -20,14 +23,14 @@
     project,
     project,
     project,
-  ];
+  ]; */
   const slides = ref<Array<any[]>>([]);
   const viewportWidth = ref<number>(0);
   let elementsPerSlide: number = 3;
 
   const setupSlides = (elementPerSlide: number = 3) => {
     slides.value = [];
-    let slide = [];
+    let slide: any[] = [];
 
     for (const index in projects) {
       const element = projects[index];
@@ -41,6 +44,17 @@
     }
 
     slides.value.push(slide);
+  };
+
+  const setupProjectsPreviews = () => {
+    for (const project of projectsData) {
+      projects.push({
+        title: project.title,
+        thumbnailSource: project.thumbnailPath,
+        shortDescription: project.shortDescription,
+        techs: project.techs,
+      });
+    }
   };
 
   const onWindowResize = (event: any) => {
@@ -65,6 +79,7 @@
   });
 
   onMounted(() => {
+    setupProjectsPreviews();
     setupSlides();
     viewportWidth.value = window.innerWidth;
     window.addEventListener('resize', onWindowResize);

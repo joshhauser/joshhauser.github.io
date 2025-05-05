@@ -1,9 +1,89 @@
 <script setup lang="ts">
+  import ContentsTable from '@/components/ContentsTable.vue';
   import projectsData from '@/data/projects.json';
+  import { onMounted, onUpdated, ref, useTemplateRef } from 'vue';
+  import { useRoute, useRouter } from 'vue-router';
+
+  const route = useRoute();
+  const router = useRouter();
+
+  const project = ref<any | undefined>(undefined);
+  const contentsTableItems = [
+    {
+      label: 'Description',
+    },
+    { label: 'Ressources' },
+    { label: 'Galerie' },
+  ];
+  const contentDiv = useTemplateRef('content');
+
+  onMounted(() => {
+    project.value = projectsData[Number(route.params.id) - 1];
+    if (project.value == undefined) {
+      router.push({ name: 'home' });
+    }
+  });
+
+  onUpdated(() => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.contents-table-link');
+
+    contentDiv.value?.addEventListener('scroll', (event) => {
+      let current: string | null = '';
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (
+          contentDiv.value?.scrollTop! >=
+          sectionTop - window.innerHeight / 2
+        ) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+  });
 </script>
 
 <template>
-  <div class="content">{{ projectsData }}</div>
+  <div ref="content" class="content flex justify-center">
+    <div v-if="project" class="lg:w-[80%] mt-5 flex flex-col">
+      <p class="text-4xl">
+        {{ project.title }}
+      </p>
+      <div class="divider"></div>
+      <div class="grid grid-cols-6 gap-5 pb-10">
+        <div class="col-span-5 flex flex-col gap-3">
+          <section id="description" data-spy>
+            <p class="text-3xl mb-3">Description</p>
+            {{ project.description }}
+          </section>
+          <section id="ressources" data-spy>
+            <p class="text-3xl mb-3">Ressources</p>
+            <ul class="resources-list ml-5">
+              <li v-for="resource in project.resources">{{ resource }}</li>
+            </ul>
+          </section>
+          <section id="galerie" data-spy>
+            <p class="text-3xl mb-3">Galerie</p>
+            <img v-for="imgSrc in project.gallery" :src="imgSrc" class="mt-2" />
+          </section>
+        </div>
+
+        <div class="contents-table">
+          <div class="sticky top-3 menu bg-base-200 rounded-box w-56">
+            <p class="text-2xl ml-2 mb-2">Sommaire</p>
+            <ContentsTable :tableItems="contentsTableItems" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
@@ -14,5 +94,9 @@
     overflow-y: auto;
     margin-top: vars.$topbar-height;
     scroll-behavior: smooth;
+  }
+
+  .resources-list {
+    list-style: disc;
   }
 </style>

@@ -30,6 +30,7 @@
   <div class="topbar flex items-center justify-center items-center">
     <div class="grid grid-cols-2 w-6xl">
       <div class="avatar-container flex items-center">
+        <!-- Ca c'est ma tronche -->
         <img src="@/assets/imgs/avatar.png" alt="3D avatar" />
       </div>
       <div class="menu w-full">
