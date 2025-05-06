@@ -9,19 +9,19 @@
       label: 'Accueil',
       icon: 'Home',
       iconColor: iconColor,
-      link: '#hero',
+      link: '/#hero',
     },
     {
       label: 'Présentation',
       icon: 'CircleUser',
       iconColor: iconColor,
-      link: '#presentation',
+      link: '/#presentation',
     },
     {
       label: 'Projets',
       icon: 'Code',
       iconColor: iconColor,
-      link: '#projects',
+      link: '/#projects',
     },
   ];
 </script>

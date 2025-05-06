@@ -12,23 +12,16 @@ const router = createRouter({
     },
     {
       path: '/projects/:id',
-      name: 'project',
-      component: Project
+      name: 'projects',
+      component: Project,
     },
-    { path: '/:pathMatch(.*)*',
-      name: 'NotFound', 
-      redirect: to  => {
-      return {name: 'home'}
-      }
-    }
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue'),
-    // },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      redirect: (to) => {
+        return { name: 'home' };
+      },
+    },
   ],
 });
 

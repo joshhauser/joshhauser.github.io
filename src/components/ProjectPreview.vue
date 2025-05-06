@@ -39,5 +39,9 @@
 <style lang="scss" scoped>
   .project-preview {
     max-width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 </style>

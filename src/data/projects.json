@@ -1,4 +1,5 @@
-[{
+[
+  {
     "title": "SGF",
     "thumbnailPath": "/imgs/thumbnails/sgf.png",
     "shortDescription": "Projet d'école : système de gestion de fichiers",
@@ -6,11 +7,30 @@
     "resources": ["Langage C", "Makefile", "Github"],
     "techs": ["C"],
     "gallery": [
-        "/imgs/sgf/cat.png",
-        "/imgs/sgf/test_cmd.png",
-        "/imgs/sgf/cd.png",
-        "/imgs/sgf/echo.png",
-        "/imgs/sgf/home.png",
-        "/imgs/sgf/rm_error.png"
+      {
+        "src": "/imgs/sgf/cat.png",
+        "caption": "Commande `cat`"
+      },
+      {
+        "src": "/imgs/sgf/test_cmd.png",
+        "caption": "Test commande"
+      },
+      {
+        "src": "/imgs/sgf/cd.png",
+        "caption": "Test commande `cd`"
+      },
+      {
+        "src": "/imgs/sgf/echo.png",
+        "caption": "Test commande `echo`"
+      },
+      {
+        "src": "/imgs/sgf/home.png",
+        "caption": "Accueil du système"
+      },
+      {
+        "src": "/imgs/sgf/rm_error.png",
+        "caption": "Exemple d'erreur"
+      }
     ]
-}]
+  }
+]

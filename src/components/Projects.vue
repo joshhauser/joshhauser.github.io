@@ -15,15 +15,6 @@
 
   const projects: any[] = [];
 
-  /* const projects = [
-    project,
-    project,
-    project,
-    project,
-    project,
-    project,
-    project,
-  ]; */
   const slides = ref<Array<any[]>>([]);
   const viewportWidth = ref<number>(0);
   let elementsPerSlide: number = 3;
@@ -81,6 +72,7 @@
   onMounted(() => {
     setupProjectsPreviews();
     setupSlides();
+
     viewportWidth.value = window.innerWidth;
     window.addEventListener('resize', onWindowResize);
   });
@@ -93,8 +85,11 @@
       <template #slideContent="slotProps">
         <div class="w-full flex justify-around flex-wrap">
           <ProjectPreview
-            v-for="project of slotProps.carouselElement"
+            v-for="(project, index) of slotProps.carouselElement"
             :project="project"
+            @click="
+              $router.push({ name: 'projects', params: { id: index + 1 } })
+            "
           />
         </div>
       </template>

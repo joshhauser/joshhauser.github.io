@@ -1,4 +1,6 @@
 <script setup lang="ts">
+  import Carousel from '@/components/Carousel.vue';
+
   import ContentsTable from '@/components/ContentsTable.vue';
   import projectsData from '@/data/projects.json';
   import { onMounted, onUpdated, ref, useTemplateRef } from 'vue';
@@ -71,7 +73,21 @@
           </section>
           <section id="galerie" data-spy>
             <p class="text-3xl mb-3">Galerie</p>
-            <img v-for="imgSrc in project.gallery" :src="imgSrc" class="mt-2" />
+            <Carousel
+              :carousel-elements="project.gallery"
+              :show-buttons="project.gallery.length > 1"
+            >
+              <template #slideContent="slotProps">
+                <div class="w-full flex justify-around flex-wrap">
+                  <figure>
+                    <img :src="slotProps.carouselElement.src" class="mt-2" />
+                    <figcaption class="mt-3 text-center">
+                      {{ slotProps.carouselElement.caption }}
+                    </figcaption>
+                  </figure>
+                </div>
+              </template>
+            </Carousel>
           </section>
         </div>
 
