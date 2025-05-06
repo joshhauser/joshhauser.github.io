@@ -31,7 +31,8 @@
       <div class="max-w-md">
         <h1 class="mb-5 text-6xl font-bold">Joshua HAUSER</h1>
         <div class="typewriting">
-          <span>Développeur&nbsp;</span><span id="typewriter"></span>
+          <p class="text-4xl">Développeur fullstack</p>
+          <span id="typewriter"></span>
         </div>
       </div>
     </div>
