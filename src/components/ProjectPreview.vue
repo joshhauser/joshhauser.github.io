@@ -25,6 +25,9 @@
           v-for="tech in props.project.techs"
           :label="techChipsConfiguration[tech.toLowerCase()].label"
           :icon="techChipsConfiguration[tech.toLowerCase()].iconName"
+          :background-color="
+            techChipsConfiguration[tech.toLowerCase()].backgroundColor
+          "
           :color="techChipsConfiguration[tech.toLowerCase()].color"
         />
       </div>

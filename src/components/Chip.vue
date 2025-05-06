@@ -11,6 +11,10 @@
       type: String,
       required: false,
     },
+    backgroundColor: {
+      type: String,
+      required: false,
+    },
     color: {
       type: String,
       required: false,
@@ -24,13 +28,14 @@
     :style="{
       borderColor: props.color,
       color: props.color,
+      backgroundColor: props.backgroundColor || 'unset',
     }"
     class="chip flex gap-2 py-1 px-3 items-center"
   >
     <Icon
       v-if="props.icon"
       :name="props.icon"
-      :size="16"
+      :size="14"
       :color="props.color"
     />
     <span class="font-bold">{{ label }}</span>

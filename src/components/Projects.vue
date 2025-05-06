@@ -4,15 +4,6 @@
   import { onMounted, ref, watch } from 'vue';
   import projectsData from '@/data/projects.json';
 
-  const project: any = {
-    title: 'Projet',
-    thumbnailSource: '/src/assets/imgs/thumbnail_placeholder.png',
-    shortDescription: 'Un exemple de projet',
-    description:
-      "Un exemple de projet décrit de manière beaucoup plus longue mais simplement pour avoir un truc à tester parce que je veux quelque chose de mieux qu'un Lorem Ipsum",
-    techs: ['Vue', 'Python', 'FastAPI'],
-  };
-
   const projects: any[] = [];
 
   const slides = ref<Array<any[]>>([]);
