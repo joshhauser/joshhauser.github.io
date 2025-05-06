@@ -32,5 +32,11 @@
         "caption": "Exemple d'erreur"
       }
     ]
+  },
+  {
+    "title": "Olivia",
+    "thumbnailPath": "/imgs/thumbnails/olivia.png",
+    "shortDescription": "Algorithme de calcul de correspondance",
+    "description": "Olivia est un algorithme de calcul de correspondance entre personnes.<br>Il se base sur des critères de personnalités, d'habitudes de vie, et de préférences établies sur les profils.<br><br>L'idée vient du constat que, sur les applications de rencontres en tout genre (amoureuses, amicales...), les algorithmes de correspondance sont très aléatoires.<br>Les utilisateurs se voient parfois suggérés des profils qui sont tantôt une copie conforme d'eux-mêmes, tantôt l'oppposé total.<br>Il devient ainsi assez difficile d'avoir une panoplie de profils correspondant plus ou moins à nos attentes.<br>Ajoutons également que certains cas ne sont pas vraiment gérés : les utilisateurs qui ne remplissent pas leur profil, les personnes homosexuelles qui se retrouvent suggérées à des personnes hétérosexuelles et inversement, une correspondance établie entre deux personnes qui ont pourtant des critères totalement incompatibles (ex : l'un veut absolument des enfants et l'autre n'en veut pas du tout) ...<br><br>Ce projet a pour but de s'intéresser à la manière dont on peut établir informatiquement une correspondance entre deux humains, de sorte à ce que celle-ci soit la plus réaliste possible."
   }
 ]

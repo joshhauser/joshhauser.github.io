@@ -15,8 +15,6 @@
     {
       label: 'Description',
     },
-    { label: 'Ressources' },
-    { label: 'Galerie' },
   ];
   const contentDiv = useTemplateRef('content');
 
@@ -24,6 +22,14 @@
     project.value = projectsData[Number(route.params.id) - 1];
     if (project.value == undefined) {
       router.push({ name: 'home' });
+    }
+
+    if (project.value.resources) {
+      contentsTableItems.push({ label: 'Ressources' });
+    }
+
+    if (project.value.gallery) {
+      contentsTableItems.push({ label: 'Galerie' });
     }
   });
 
@@ -62,17 +68,17 @@
       <div class="divider"></div>
       <div class="grid grid-cols-6 gap-5 pb-10">
         <div class="col-span-5 flex flex-col gap-3">
-          <section id="description" data-spy>
+          <section id="description">
             <p class="text-3xl mb-3">Description</p>
             <div v-html="renderMarkdown(project.description)"></div>
           </section>
-          <section id="ressources" data-spy>
+          <section v-if="project.resources" id="ressources">
             <p class="text-3xl mb-3">Ressources</p>
             <ul class="resources-list">
               <li v-for="resource in project.resources">{{ resource }}</li>
             </ul>
           </section>
-          <section id="galerie" data-spy>
+          <section v-if="project.gallery" id="galerie">
             <p class="text-3xl mb-3">Galerie</p>
             <Carousel
               :carousel-elements="project.gallery"
