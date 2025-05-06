@@ -12,6 +12,11 @@
       required: false,
       default: true,
     },
+    fullWidth: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   });
 
   const currentSlideId = ref<number>(0);
@@ -19,7 +24,10 @@
 
 <template>
   <div class="carousel-container flex flex-col justify-center items-center">
-    <div class="w-3/4 h-[80%] md:h-fit carousel">
+    <div
+      :class="{ 'w-3/4': !fullWidth, 'w-full': fullWidth }"
+      class="h-[90%] md:h-fit carousel"
+    >
       <template v-for="(element, index) in props.carouselElements">
         <div :id="'slide' + index" class="relative w-full carousel-item">
           <slot name="slideContent" :carouselElement="element"></slot>

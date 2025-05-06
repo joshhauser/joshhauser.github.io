@@ -55,7 +55,7 @@
 
 <template>
   <div ref="content" class="content flex justify-center">
-    <div v-if="project" class="lg:w-[80%] mt-5 flex flex-col">
+    <div v-if="project" class="lg:w-[50%] mt-5 flex flex-col">
       <p class="text-4xl">
         {{ project.title }}
       </p>
@@ -77,6 +77,7 @@
             <Carousel
               :carousel-elements="project.gallery"
               :show-buttons="project.gallery.length > 1"
+              :full-width="true"
             >
               <template #slideContent="slotProps">
                 <div class="w-full flex justify-around flex-wrap">

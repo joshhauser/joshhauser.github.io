@@ -3,7 +3,7 @@
     "title": "SGF",
     "thumbnailPath": "/imgs/thumbnails/sgf.png",
     "shortDescription": "Projet d'école : système de gestion de fichiers",
-    "description": "Le projet SGF a été réalisé durant ma première année d'études en école d'ingénieur.\nLe but de ce projet était de créer un mini système de gestion de fichiers, basé sur le fonctionnement des systèmes Unix.  Le programme reprend donc le fonctionnement des inodes et blocs d'Unix.\n\nL'utilisateur interagit avec le SGF au travers d'un interpréteur de commandes, inspiré du fonctionnement du shell.<br><br>Le SGF comporte les fonctionnalités suivantes:\n* Création\n* Copie\n* Déplacement\n* Suppression (concernant les répertoires, seuls ceux qui sont vides sont supprimés)\n* Lecture de fichier\n* Navigation\n* ...\n",
+    "description": "Le projet SGF a été réalisé durant ma première année d'études en école d'ingénieur.\nLe but de ce projet était de créer un mini système de gestion de fichiers, basé sur le fonctionnement des systèmes Unix.  Le programme reprend donc le fonctionnement des inodes et blocs d'Unix.\n\nL'utilisateur interagit avec le SGF au travers d'un interpréteur de commandes, inspiré du fonctionnement du shell.<br><br>Le SGF comporte les fonctionnalités suivantes:\n* Création\n* Copie\n* Déplacement\n* Suppression (concernant les répertoires, seuls ceux qui sont vides sont supprimés)\n* Lecture de fichier\n* Navigation\n* ...\n<br><br>Le SGF utilise un disque simulé par un fichier, à la manière des disques de machines virtuelles. Ce disque a une capacité de 150Mo. L'utilisateur a à sa disposition 50 inodes et 150 blocs (cela peut-être modifié dans le fichier sgf.h du projet).",
     "resources": ["Langage C", "Makefile", "Github"],
     "techs": ["C"],
     "gallery": [
