@@ -1,6 +1,7 @@
 <script setup lang="ts">
   import type { PropType } from 'vue';
   import Chip from './Chip.vue';
+  import { techChipsConfiguration } from '@/utils/consts';
 
   const props = defineProps({
     project: {
@@ -22,8 +23,9 @@
       <div class="flex gap-2">
         <Chip
           v-for="tech in props.project.techs"
-          :label="tech"
-          :icon="'Candy'"
+          :label="techChipsConfiguration[tech.toLowerCase()].label"
+          :icon="techChipsConfiguration[tech.toLowerCase()].iconName"
+          :color="techChipsConfiguration[tech.toLowerCase()].color"
         />
       </div>
       <div class="divider m-0"></div>

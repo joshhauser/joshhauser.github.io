@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  import type { ContentsTableItem } from '@/models/contents-table-item';
+  import type { ContentsTableItem } from '@/models/contents-table-item.model';
   import type { PropType } from 'vue';
 
   const props = defineProps({

@@ -35,16 +35,12 @@
   />
   <div v-else>
     <div
-      class="simple-icon"
-      :style="{ fill: color }"
+      :style="{
+        width: props.size + 'px',
+        height: props.size + 'px',
+        fill: props.color,
+      }"
       v-html="simpleIcons[props.name]?.svg"
     ></div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-  .simple-icon {
-    height: 24px;
-    width: 24px;
-  }
-</style>
