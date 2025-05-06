@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <body>
+    <textarea id="text"></textarea>
+    <br />
+    <button id="btn">Copy</button>
+
+    <style>
+      #text {
+        height: 500px;
+        width: 900px;
+        word-wrap: break-word;
+        border: 1px solid black;
+      }
+    </style>
+    <script>
+      const copy = () => {
+        const text = document.querySelector('#text').value;
+        text.replace(/\n/g, '\\n');
+        navigator.clipboard
+          .writeText(text.replace(/\n/g, '\\n'))
+          .then(() => alert('Texte copié !'))
+          .catch((err) => alert('Erreur lors de la copie : ' + err));
+      };
+
+      window.onload = () => {
+        const btn = document.querySelector('#btn');
+        btn.onclick = copy;
+      };
+    </script>
+  </body>
+</html>

@@ -5,6 +5,7 @@
   import projectsData from '@/data/projects.json';
   import { onMounted, onUpdated, ref, useTemplateRef } from 'vue';
   import { useRoute, useRouter } from 'vue-router';
+  import { renderMarkdown } from '@/utils/rendering';
 
   const route = useRoute();
   const router = useRouter();
@@ -63,11 +64,11 @@
         <div class="col-span-5 flex flex-col gap-3">
           <section id="description" data-spy>
             <p class="text-3xl mb-3">Description</p>
-            {{ project.description }}
+            <div v-html="renderMarkdown(project.description)"></div>
           </section>
           <section id="ressources" data-spy>
             <p class="text-3xl mb-3">Ressources</p>
-            <ul class="resources-list ml-5">
+            <ul class="resources-list">
               <li v-for="resource in project.resources">{{ resource }}</li>
             </ul>
           </section>
@@ -111,8 +112,14 @@
     margin-top: vars.$topbar-height;
     scroll-behavior: smooth;
   }
+</style>
 
-  .resources-list {
-    list-style: disc;
+<style>
+  #description,
+  #ressources {
+    ul {
+      list-style: disc;
+      margin-left: 30px;
+    }
   }
 </style>
