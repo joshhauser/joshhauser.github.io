@@ -26,9 +26,9 @@
   <div class="carousel-container flex flex-col justify-center items-center">
     <div
       :class="{ 'w-3/4': !fullWidth, 'w-full': fullWidth }"
-      class="h-[90%] md:h-fit carousel"
+      class="md:h-fit carousel"
     >
-      <template v-for="(element, index) in props.carouselElements">
+      <template v-for="(element, index) in props.carouselElements" :key="index">
         <div :id="'slide' + index" class="relative w-full carousel-item">
           <slot name="slideContent" :carouselElement="element"></slot>
           <!-- TODO: replace with better mechanism-->

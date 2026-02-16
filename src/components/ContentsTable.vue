@@ -30,4 +30,18 @@
       background-color: #2e353a;
     }
   }
+
+  li {
+    &:hover {
+      background-color: color-mix(
+        in oklab,
+        oklch(97.807% 0.029 256.847) 10%,
+        transparent
+      );
+
+      transition-property: color, background-color, box-shadow;
+      transition-duration: 0.2s;
+      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
 </style>

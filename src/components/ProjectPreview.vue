@@ -46,5 +46,9 @@
     &:hover {
       cursor: pointer;
     }
+
+    .card-body {
+      background-color: oklch(25.33% 0.016 252.42);
+    }
   }
 </style>

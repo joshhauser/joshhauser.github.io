@@ -68,13 +68,16 @@
       <div class="divider"></div>
       <div class="grid grid-cols-6 gap-5 pb-10">
         <div class="col-span-5 flex flex-col gap-3">
-          <section id="description">
+          <section id="description" class="mb-5">
             <p class="text-3xl mb-3">Description</p>
-            <div v-html="renderMarkdown(project.description)"></div>
+            <div
+              v-html="renderMarkdown(project.description)"
+              class="text-lg"
+            ></div>
           </section>
-          <section v-if="project.resources" id="ressources">
+          <section v-if="project.resources" id="ressources" class="mb-5">
             <p class="text-3xl mb-3">Ressources</p>
-            <ul class="resources-list">
+            <ul class="resources-list text-lg">
               <li v-for="resource in project.resources">{{ resource }}</li>
             </ul>
           </section>
@@ -118,6 +121,13 @@
     overflow-y: auto;
     margin-top: vars.$topbar-height;
     scroll-behavior: smooth;
+    background-color: oklch(25.33% 0.016 252.42);
+
+    .contents-table {
+      .menu {
+        background-color: oklch(23.26% 0.014 253.1);
+      }
+    }
   }
 </style>
 

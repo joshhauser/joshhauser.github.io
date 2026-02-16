@@ -18,7 +18,7 @@
         const text = document.querySelector('#text').value;
         text.replace(/\n/g, '\\n');
         navigator.clipboard
-          .writeText(text.replace(/\n/g, '\\n'))
+          .writeText(text.replace(/\n/g, '\\n').replace(/£/g, '\\n\\n'))
           .then(() => alert('Texte copié !'))
           .catch((err) => alert('Erreur lors de la copie : ' + err));
       };

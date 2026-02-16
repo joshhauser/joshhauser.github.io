@@ -46,6 +46,7 @@
 <style scoped lang="scss">
   .presentation {
     height: 100%;
+    background-color: oklch(25.33% 0.016 252.42);
 
     &-content {
       background-color: #3a3a3a;
